@@ -1,6 +1,6 @@
 {
-  "title": "Cookie Vault Test Page",
-  "description": "The repo's own cookiestest.html \u2014 safe to inject test cookies against.",
-  "image": "preview.svg",
-  "siteLink": "https://marufhossainkeyas11.github.io/Cookie-Vault-Bookmark/cookiestest.html"
+  "title": "Netflix",
+  "description": "Get the Netflix for free...",
+  "image": "./cookies/Test/netflix.png",
+  "siteLink": "https://netflix.com"
 }
