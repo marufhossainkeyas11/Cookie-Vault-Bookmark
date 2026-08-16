@@ -441,8 +441,12 @@ async function discoverFoldersViaGitHubApi(){
   let lastErr = null;
   for (const branch of branches) {
     try {
-      const url = `https://api.github.com/repos/${info.owner}/${info.repo}/git/trees/${branch}?recursive=1`;
-      const res = await fetch(url, { headers: { Accept: 'application/vnd.github+json' } });
+      // Routed through a Cloudflare Worker proxy (adds a GitHub token
+      // server-side, raising the rate limit from 60/hour per visitor
+      // to 5000/hour shared, plus a 60s edge cache) instead of calling
+      // api.github.com directly from the browser.
+      const url = `https://cookie-vault.marufhossainkeyas.workers.dev/tree/${branch}`;
+      const res = await fetch(url);
       if (res.status === 404) { lastErr = new Error('branch-404'); continue; }
       if (res.status === 403) throw new Error('rate-limited');
       if (!res.ok) throw new Error('status:' + res.status);
