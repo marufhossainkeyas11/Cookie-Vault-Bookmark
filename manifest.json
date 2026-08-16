@@ -1,0 +1,22 @@
+[
+  {
+    "path": "cookies/test-cookies.txt",
+    "format": "json",
+    "label": "test-cookies.txt"
+  },
+  {
+    "path": "cookies/test-cookies2.txt",
+    "format": "json",
+    "label": "test-cookies2.txt"
+  },
+  {
+    "path": "cookies/v1/test.txt",
+    "format": "header",
+    "label": "v1/test.txt"
+  },
+  {
+    "path": "cookies/final/test-3.txt",
+    "format": "netscape",
+    "label": "final/test-3.txt"
+  }
+]
