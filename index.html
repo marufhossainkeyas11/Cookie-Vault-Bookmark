@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Vault — Bookmarklet</title>
+<meta name="description" content="Drag-and-drop bookmarklet to copy and inject browser cookies in JSON, Header String, or Netscape format. No extension install required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="barzone">
+  <div class="bar">
+    <div class="bar-dots"><span></span><span></span><span></span></div>
+    <div class="bar-fake-link" data-i18n="bar_news">News</div>
+    <div class="bar-fake-link active" data-i18n="bar_tools">Tools</div>
+    <div class="bar-fake-link" data-i18n="bar_mail">Mail</div>
+    <div class="bar-spacer"></div>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language selector">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="bn">বাং</button>
+    </div>
+    <a href="#" class="install-btn bookmarklet-link" id="dragBtn" data-i18n="btn_install" data-i18n-title="btn_install_title" title="Drag to your bookmarks bar">
+      🍪 Cookie Vault
+    </a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow" data-i18n="eyebrow">BOOKMARKLET · 4742 CHARACTERS · NO INSTALL</div>
+    <h1 data-i18n-html="hero_title">Manage <span class="jar">cookies</span> on any site in one click</h1>
+    <p class="lede" data-i18n="hero_lede">Cookie Vault is a bookmarklet — copy, paste, or inject cookies on any page without installing an extension. Paste JSON, a Header String, or Netscape format and it figures out the rest.</p>
+    <div class="hero-actions">
+      <a href="#" class="install-btn bookmarklet-link" style="padding:11px 20px;font-size:14px" data-i18n="btn_drag">
+        🍪 Drag Cookie Vault
+      </a>
+      <div class="drag-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <span data-i18n="drag_hint">Drag the button above to your bookmarks bar</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="how">
+    <div class="sec-label" data-i18n="how_label">How it works</div>
+    <h2 data-i18n="how_title">Three steps to get started</h2>
+    <p class="sec-intro" data-i18n-html="how_intro">Bookmarks bar not visible? Press <code>Ctrl+Shift+B</code> (Windows/Linux) or <code>⌘+Shift+B</code> (Mac).</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3 data-i18n="step1_title">Drag it to your bookmarks bar</h3>
+          <p data-i18n-html="step1_body">Grab the <code>🍪 Cookie Vault</code> button above and drop it on your bookmarks bar. It's a saved bookmarklet — no extension gets installed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3 data-i18n="step2_title">Click it on any site</h3>
+          <p data-i18n-html="step2_body">Go to the website whose cookies you want to work with, then click <code>Cookie Vault</code> in your bookmarks bar. A light panel opens and the page behind it blurs.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3 data-i18n="step3_title">Copy or inject</h3>
+          <p data-i18n-html="step3_body">To copy current cookies, pick a format and press <code>Copy</code>. To set new cookies, paste them into the textbox and press <code>Inject</code> — the format is auto-detected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="formats">
+    <div class="sec-label" data-i18n="formats_label">Supported formats</div>
+    <h2 data-i18n="formats_title">Paste it, and it just knows</h2>
+    <p class="sec-intro" data-i18n="formats_intro">Paste any one of these three formats and Cookie Vault parses and injects it correctly on its own — no need to pick a format manually.</p>
+    <div class="fmt-grid">
+      <div class="fmt-card json">
+        <span class="tag">JSON</span>
+        <pre>[
+  {
+    "name": "session",
+    "value": "abc123",
+    "domain": "example.com"
+  }
+]</pre>
+        <p data-i18n="fmt_json_desc">The default export format from the Cookie-Editor extension.</p>
+      </div>
+      <div class="fmt-card header">
+        <span class="tag" data-i18n="fmt_header_tag">HEADER STRING</span>
+        <pre>session=abc123;
+theme=dark;
+lang=en</pre>
+        <p data-i18n-html="fmt_header_desc">The format you get straight from <code style="background:none;border:none;padding:0">document.cookie</code> in browser DevTools.</p>
+      </div>
+      <div class="fmt-card netscape">
+        <span class="tag">NETSCAPE</span>
+        <pre>.example.com  TRUE  /
+TRUE  1999999999
+session  abc123</pre>
+        <p data-i18n="fmt_netscape_desc">A file exported from curl, wget, or a cookies.txt extension.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="features">
+    <div class="sec-label" data-i18n="features_label">Inside the panel</div>
+    <h2 data-i18n="features_title">Small panel, full control</h2>
+    <div class="feat-list">
+      <div class="feat">
+        <div class="feat-icon">🔄</div>
+        <div>
+          <h4 data-i18n="feat1_title">Preview updates as you switch format</h4>
+          <p data-i18n="feat1_body">Pick JSON / Header / Netscape from the dropdown and the textbox preview instantly switches to that format.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">🧹</div>
+        <div>
+          <h4 data-i18n="feat2_title">Clear old — wipe before injecting</h4>
+          <p data-i18n="feat2_body">Enabled by default, this option clears all current cookies before injecting so old and new cookies don't mix.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">↻</div>
+        <div>
+          <h4 data-i18n="feat3_title">Reload — auto-refresh after inject</h4>
+          <p data-i18n="feat3_body">The page reloads itself right after injecting so the new cookies take effect immediately.</p>
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-icon">✕</div>
+        <div>
+          <h4 data-i18n="feat4_title">Close it from anywhere</h4>
+          <p data-i18n="feat4_body">Click outside the panel or press ✕ to close it. Clicking the bookmarklet again also toggles it closed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="testfiles">
+    <div class="sec-label" data-i18n="tf_label">Test files</div>
+    <h2 data-i18n="tf_title">Sample cookies to try it with</h2>
+    <p class="sec-intro" data-i18n="tf_intro">Each card below is a saved test site. Copy sends its cookies straight to your clipboard — open the site and paste them into the bookmarklet panel.</p>
+    <div class="tf-panel">
+      <div class="tf-toolbar">
+        <span class="count" id="tfCount" data-i18n="tf_loading_short">Loading…</span>
+        <button class="tf-refresh" id="tfRefresh" type="button">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 12a9 9 0 11-2.64-6.36M21 4v6h-6"/></svg>
+          <span data-i18n="tf_refresh">Refresh</span>
+        </button>
+      </div>
+      <div class="tf-grid" id="tfBody">
+        <div class="tf-state" id="tfInitialState">
+          <div class="spinner"></div>
+          <p data-i18n="tf_loading">Looking for test entries in the cookies folder…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="code">
+    <div class="sec-label" data-i18n="code_label">Raw code</div>
+    <h2 data-i18n="code_title">Want to build your own bookmark?</h2>
+    <p class="sec-intro" data-i18n="code_intro">Copy the code below, create a new bookmark, and paste it into the URL field.</p>
+    <div class="code-panel">
+      <div class="code-head">
+        <span>bookmarklet.js</span>
+        <button class="copy-btn" id="copyCodeBtn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          <span data-i18n="copy_btn">Copy</span>
+        </button>
+      </div>
+      <div class="code-body"><code id="codeText"></code></div>
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="footer_text">Made with <span class="heart">♥</span> — no data ever leaves your browser</p>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
