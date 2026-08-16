@@ -554,6 +554,12 @@ async function loadManifest(){
     try {
       discovered = await discoverFoldersViaGitHubApi();
     } catch (apiErr) {
+      // A rate-limit is a known, specific condition — surface it as-is
+      // instead of masking it with whatever error the fallback produces
+      // (the fallback will almost always fail too on GitHub Pages, since
+      // static hosting has no directory listing, and that generic error
+      // used to bury the real "rate-limited" reason from the user).
+      if (apiErr.message === 'rate-limited') throw apiErr;
       discovered = await discoverFoldersViaDirectoryListing();
     }
     discovered.sort((a, b) => a.slug.localeCompare(b.slug));
