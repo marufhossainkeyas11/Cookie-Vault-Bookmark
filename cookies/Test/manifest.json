@@ -1,6 +1,6 @@
 {
   "title": "Netflix",
   "description": "Get the Netflix for free...",
-  "image": "netflix.svg",
+  "image": "./cookies/netflix.svg",
   "siteLink": "https://netflix.com"
 }
