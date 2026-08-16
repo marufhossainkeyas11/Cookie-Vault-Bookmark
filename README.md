@@ -7,8 +7,9 @@ Bookmarklet landing page for copying, pasting, and injecting browser cookies
 
 ```
 index.html            # the whole site (theme, i18n, bookmarklet builder, test-file browser)
+manifest.json        # index of every test file shown on the page — see below
 cookies/
-  manifest.json        # index of every test file shown on the page — see below
+
   test-cookies.txt      # JSON format sample
   test-cookies2.txt     # JSON format sample
   v1/test.txt            # Header String format sample
