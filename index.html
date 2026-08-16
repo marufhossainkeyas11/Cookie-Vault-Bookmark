@@ -1107,7 +1107,7 @@ async function loadManifest(){
   tfState.error = null;
   renderTestFiles();
   try {
-    const res = await fetch('cookies/manifest.json', { cache: 'no-store' });
+    const res = await fetch('./manifest.json', { cache: 'no-store' });
     if (!res.ok) {
       throw new Error('status:' + res.status);
     }
