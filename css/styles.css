@@ -1,0 +1,583 @@
+/* =========================================================
+   COOKIE VAULT — STYLES
+   ---------------------------------------------------------
+   Structure:
+     1. Root variables / resets
+     2. Desktop layout (default, no media query needed)
+     3. Responsive / mobile overrides (bottom of file, one
+        place to look for every breakpoint — see "MOBILE"
+        section near the end)
+========================================================= */
+
+:root{
+  --bg:#fdfbf7;
+  --paper:#fffdf9;
+  --ink:#3a352e;
+  --muted:#8a8071;
+  --line:#e6dcc9;
+  --line-soft:#f0e9dd;
+  --accent:#f0a04b;
+  --accent-dark:#d4842f;
+  --green:#5fa876;
+  --coral:#e0654f;
+  --blue:#3b6bc9;
+  --mono:'Space Mono',ui-monospace,Consolas,monospace;
+  --sans:'Inter',-apple-system,sans-serif;
+  --sans-bn:'Noto Sans Bengali','Inter',-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+body.lang-bn{font-family:var(--sans-bn)}
+body::before{
+  content:"";
+  position:fixed;inset:0;
+  background-image:radial-gradient(circle,#e6dcc9 1px,transparent 1px);
+  background-size:28px 28px;
+  opacity:.5;
+  pointer-events:none;
+  z-index:0;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+a{color:inherit}
+button{font-family:inherit}
+
+/* ---------- NAV / MOCK BOOKMARK BAR ---------- */
+.barzone{
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+  position:sticky;top:0;
+  z-index:50;
+  backdrop-filter:blur(6px);
+}
+.bar{
+  max-width:760px;margin:0 auto;padding:0 24px;
+  display:flex;align-items:center;gap:10px;
+}
+.bar-dots{display:flex;gap:6px;margin-right:8px}
+.bar-dots span{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.bar-fake-link{
+  font-size:12px;color:var(--muted);
+  padding:6px 10px;border-radius:6px;
+  text-decoration:none;
+}
+.bar-fake-link.active{
+  background:var(--paper);
+  border:1px solid var(--line);
+  color:var(--ink);
+  font-weight:600;
+  box-shadow:0 1px 2px rgba(120,100,70,.08);
+}
+.bar-spacer{flex:1}
+.install-btn{
+  font-family:var(--mono);
+  font-size:12.5px;
+  font-weight:700;
+  color:var(--ink);
+  background:linear-gradient(180deg,#fff,#fbf3e6);
+  border:1.5px solid var(--accent);
+  border-radius:8px;
+  padding:6px 12px;
+  text-decoration:none;
+  display:inline-flex;align-items:center;gap:6px;
+  cursor:grab;
+  white-space:nowrap;
+  box-shadow:0 2px 0 var(--accent);
+}
+.install-btn:active{cursor:grabbing;transform:translateY(1px);box-shadow:0 1px 0 var(--accent)}
+.install-btn:focus-visible,.lang-btn:focus-visible,.copy-btn:focus-visible,
+.file-row:focus-visible,.tab-btn:focus-visible{outline:2px solid var(--accent-dark);outline-offset:2px}
+
+/* ---------- LANGUAGE SWITCHER ---------- */
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap:2px;
+  background:var(--line-soft);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:3px;
+  flex-shrink:0;
+}
+.lang-btn{
+  font-family:var(--mono);
+  font-size:11.5px;
+  font-weight:700;
+  color:var(--muted);
+  background:transparent;
+  border:0;
+  border-radius:6px;
+  padding:5px 10px;
+  cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.lang-btn.active{
+  background:var(--paper);
+  color:var(--ink);
+  box-shadow:0 1px 2px rgba(120,100,70,.1);
+}
+.lang-btn:hover:not(.active){color:var(--ink)}
+
+/* ---------- HERO ---------- */
+.hero{padding:72px 0 56px}
+.eyebrow{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--accent-dark);
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:22px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--accent-dark)}
+h1{
+  font-family:var(--mono);
+  font-size:clamp(38px,7vw,60px);
+  line-height:1.04;
+  letter-spacing:-.01em;
+  font-weight:700;
+  max-width:11ch;
+}
+body.lang-bn h1{font-family:var(--sans-bn);font-weight:700;max-width:12ch}
+h1 .jar{color:var(--accent-dark)}
+.lede{
+  margin-top:22px;
+  font-size:17px;
+  color:var(--muted);
+  max-width:46ch;
+}
+.hero-actions{
+  margin-top:36px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+.drag-hint{
+  font-size:12.5px;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.drag-hint svg{flex-shrink:0}
+
+/* ---------- SECTION SCAFFOLDING ---------- */
+section{padding:52px 0}
+.divider{height:1px;background:var(--line-soft);border:0}
+.sec-label{
+  font-family:var(--mono);
+  font-size:11.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:16px;
+}
+h2{
+  font-family:var(--mono);
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:14px;
+  letter-spacing:-.01em;
+}
+body.lang-bn h2{font-family:var(--sans-bn);font-weight:700}
+.sec-intro{color:var(--muted);max-width:52ch;margin-bottom:32px}
+
+/* ---------- STEPS ---------- */
+.steps{
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  background:var(--paper);
+}
+.step{
+  display:flex;
+  gap:18px;
+  padding:22px 22px;
+  border-bottom:1px solid var(--line-soft);
+}
+.step:last-child{border-bottom:none}
+.step-num{
+  font-family:var(--mono);
+  font-size:13px;
+  font-weight:700;
+  color:var(--accent-dark);
+  background:#fbf0dd;
+  border:1px solid #ecd8ae;
+  width:28px;height:28px;
+  border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.step-body h3{font-size:15px;font-weight:600;margin-bottom:4px}
+.step-body p{font-size:13.5px;color:var(--muted)}
+.step-body code{
+  font-family:var(--mono);
+  background:#fbf7f0;
+  border:1px solid var(--line);
+  border-radius:5px;
+  padding:1px 6px;
+  font-size:12.5px;
+  color:var(--ink);
+}
+
+/* ---------- FORMAT CARDS ---------- */
+.fmt-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.fmt-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:18px;
+}
+.fmt-card .tag{
+  display:inline-block;
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:700;
+  padding:3px 8px;
+  border-radius:5px;
+  margin-bottom:12px;
+}
+.fmt-card.json .tag{background:#eaf2ff;color:var(--blue)}
+.fmt-card.header .tag{background:#eafaf0;color:#2f8f57}
+.fmt-card.netscape .tag{background:#fdeee9;color:#c85a3f}
+.fmt-card pre{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--muted);
+  white-space:pre-wrap;
+  word-break:break-all;
+  line-height:1.55;
+}
+.fmt-card p{font-size:12.5px;color:var(--muted);margin-top:10px}
+
+/* ---------- FEATURE LIST ---------- */
+.feat-list{display:flex;flex-direction:column;gap:2px}
+.feat{
+  display:flex;
+  gap:14px;
+  padding:16px 4px;
+  border-bottom:1px solid var(--line-soft);
+  align-items:flex-start;
+}
+.feat:last-child{border-bottom:none}
+.feat-icon{
+  width:32px;height:32px;
+  border-radius:8px;
+  background:#fbf3e6;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  font-size:15px;
+}
+.feat h4{font-size:14.5px;font-weight:600;margin-bottom:3px}
+.feat p{font-size:13px;color:var(--muted)}
+
+/* ---------- TEST FILES BROWSER (card gallery) ---------- */
+.tf-panel{
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--paper);
+  overflow:hidden;
+}
+.tf-toolbar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 16px;
+  border-bottom:1px solid var(--line-soft);
+  background:#fbf7ef;
+}
+.tf-toolbar .count{
+  font-family:var(--mono);
+  font-size:11.5px;
+  color:var(--muted);
+}
+.tf-refresh{
+  margin-left:auto;
+  font-family:var(--mono);
+  font-size:11.5px;
+  font-weight:700;
+  color:var(--ink);
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:7px;
+  padding:6px 11px;
+  cursor:pointer;
+  display:flex;align-items:center;gap:6px;
+  transition:background .15s;
+}
+.tf-refresh:hover{background:var(--line-soft)}
+.tf-refresh:disabled{opacity:.5;cursor:default}
+.tf-refresh svg{transition:transform .5s}
+.tf-refresh.spinning svg{animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.tf-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1px;
+  background:var(--line-soft);
+  min-height:60px;
+  /* If someone drops in a lot of test folders, the gallery scrolls
+     inside its own panel instead of stretching the whole page —
+     the toolbar (count + refresh) stays visible above it. */
+  max-height:70vh;
+  overflow-y:auto;
+}
+
+.tf-state{
+  grid-column:1/-1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:36px 20px;
+  text-align:center;
+  background:var(--paper);
+}
+.tf-state p{font-size:13px;color:var(--muted);max-width:36ch}
+.tf-state.err p{color:var(--coral)}
+.spinner{
+  width:22px;height:22px;
+  border-radius:50%;
+  border:2.5px solid var(--line);
+  border-top-color:var(--accent-dark);
+  animation:spin .7s linear infinite;
+}
+.tf-retry{
+  font-family:var(--mono);
+  font-size:11.5px;
+  font-weight:700;
+  color:var(--coral);
+  background:#fdeee9;
+  border:1px solid #f2c7bb;
+  border-radius:7px;
+  padding:6px 12px;
+  cursor:pointer;
+}
+.tf-retry:hover{background:#fbe0d7}
+
+/* each test entry: a torn "index card" — perforated edge nods to a
+   recipe-card box, which is the one deliberate risk in this section */
+.tcard{
+  background:var(--paper);
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  position:relative;
+}
+.tcard-media{
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:10px;
+  overflow:hidden;
+  background:
+    repeating-linear-gradient(45deg,#f0e9dd,#f0e9dd 8px,#fbf7ef 8px,#fbf7ef 16px);
+  border:1px solid var(--line);
+  position:relative;
+}
+.tcard-media img{width:100%;height:100%;object-fit:cover;display:block}
+.tcard-media .ph{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;
+  color:var(--muted);
+  opacity:.6;
+}
+.tcard-num{
+  position:absolute;
+  top:8px;left:8px;
+  font-family:var(--mono);
+  font-size:10.5px;
+  font-weight:700;
+  color:var(--ink);
+  background:rgba(253,251,247,.92);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:2px 7px;
+  backdrop-filter:blur(3px);
+}
+.tcard-title{
+  font-family:var(--mono);
+  font-size:13.5px;
+  font-weight:700;
+  line-height:1.35;
+}
+body.lang-bn .tcard-title{font-family:var(--sans-bn)}
+.tcard-fname{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-family:var(--mono);
+  font-size:10.5px;
+  color:var(--accent-dark);
+  background:#fbf0dd;
+  border:1px solid #ecd8ae;
+  border-radius:5px;
+  padding:2px 7px;
+  width:fit-content;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.tcard-fname::before{content:"📄";font-size:9.5px}
+.tcard-desc{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.5;
+  flex:1;
+}
+.tcard-actions{display:flex;gap:8px;margin-top:2px}
+.tcard-copy,.tcard-open{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:600;
+  border-radius:8px;
+  padding:8px 12px;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  border:0;
+  flex:1;
+  transition:background .15s,transform .1s;
+}
+.tcard-copy{color:#2a2620;background:var(--accent)}
+.tcard-copy:hover{background:var(--accent-dark)}
+.tcard-copy:active{transform:scale(.97)}
+.tcard-copy.done{background:var(--green);color:#fff}
+.tcard-copy.err{background:var(--coral);color:#fff}
+.tcard-copy:disabled{opacity:.6;cursor:default}
+.tcard-open{color:var(--ink);background:var(--line-soft);flex:0 0 auto;width:38px;padding:8px}
+.tcard-open:hover{background:var(--line)}
+.tcard-open svg{flex-shrink:0}
+.tcard-err-note{font-size:11px;color:var(--coral)}
+
+/* ---------- CODE BLOCK ---------- */
+.code-panel{
+  background:#2a2620;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid #3a352a;
+}
+.code-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 16px;
+  border-bottom:1px solid #3a352a;
+}
+.code-head span{
+  font-family:var(--mono);
+  font-size:11.5px;
+  color:#a89a80;
+}
+.copy-btn{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:600;
+  color:#2a2620;
+  background:var(--accent);
+  border:0;
+  border-radius:7px;
+  padding:7px 13px;
+  cursor:pointer;
+  display:flex;align-items:center;gap:6px;
+  transition:background .15s;
+}
+.copy-btn:hover{background:var(--accent-dark)}
+.copy-btn.done{background:var(--green);color:#fff}
+.code-body{
+  padding:16px;
+  max-height:220px;
+  overflow-y:auto;
+}
+.code-body code{
+  font-family:var(--mono);
+  font-size:11px;
+  color:#d8cfc0;
+  word-break:break-all;
+  white-space:pre-wrap;
+  line-height:1.6;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  padding:40px 0 60px;
+  text-align:center;
+}
+footer p{font-size:12.5px;color:var(--muted)}
+footer .heart{color:var(--accent-dark)}
+
+/* ---------- TOAST ---------- */
+.toast{
+  position:fixed;
+  bottom:24px;left:50%;
+  transform:translateX(-50%) translateY(20px);
+  background:var(--ink);
+  color:#fdfbf7;
+  font-size:13px;
+  font-weight:500;
+  padding:11px 20px;
+  border-radius:10px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .2s, transform .2s;
+  z-index:100;
+  box-shadow:0 8px 24px rgba(0,0,0,.2);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.err{background:var(--coral)}
+
+::selection{background:#f0a04b55}
+
+/* =========================================================
+   RESPONSIVE / MOBILE
+   ---------------------------------------------------------
+   Every breakpoint in the project lives here — nowhere else.
+   Ordered widest → narrowest.
+========================================================= */
+
+/* Format cards: 3 columns -> 1 column below 640px */
+@media (max-width: 640px) {
+  .fmt-grid { grid-template-columns: 1fr; }
+}
+
+/* Test-file card grid: 2 columns -> 1 column below 560px.
+   Also shrink the scroll cap a bit so it doesn't eat the whole
+   phone viewport when many test folders are present. */
+@media (max-width: 560px) {
+  .tf-grid {
+    grid-template-columns: 1fr;
+    max-height: 60vh;
+  }
+}
+
+/* Top mock bookmark bar: hide fake nav links + spacer on small phones
+   so the language switch + install button don't get cramped */
+@media (max-width: 520px) {
+  .bar-fake-link { display: none; }
+  .bar-spacer { display: none; }
+}
+
+/* Accessibility: respect reduced-motion at any screen size */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}
