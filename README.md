@@ -8,12 +8,19 @@ Bookmarklet landing page for copying, pasting, and injecting browser cookies
 ```
 index.html            # markup only — pulls in css/styles.css and js/app.js
 css/
-  styles.css           # all styling — desktop base up top, every
-                         media query grouped in one section at the
+  styles.css           # design tokens up top, sections in source
+                         order, DESKTOP rules and MOBILE rules each
+                         grouped in their own labeled section at the
                          bottom (see comments inside the file)
 js/
   app.js               # all logic — i18n, bookmarklet builder,
                          test-file discovery/rendering, UI wiring
+  worker.js             # NOT loaded by the site. Reference copy of
+                          the Cloudflare Worker that proxies GitHub
+                          API calls (see "Rate limits" below) — keep
+                          this in sync with whatever's actually
+                          deployed on Cloudflare, but it plays no
+                          part in the page itself.
 cookies/
   test-1/
     manifest.json       # { title, description, image, siteLink } — shared by every .txt below
@@ -30,8 +37,24 @@ cookies/
 
 Only two sample folders ship in this repo (`test-1`, `test-2`) to keep
 things easy to scan — add as many more as you actually need following the
-same shape below. The gallery scrolls inside its own panel if the list
-gets long, so the rest of the page never gets pushed down.
+same shape below.
+
+## Test files layout: sidebar + gallery
+
+The Test files section is a folder list on the left and a card gallery on
+the right (on mobile, the folder list becomes a horizontally-scrolling
+strip above the gallery instead of a side column). Click a folder in the
+sidebar and the gallery on the right swaps to that folder's cards — this
+is what keeps things easy to scan even with a lot of folders and files:
+you're only ever looking at one folder's cards at a time, never one long
+combined grid.
+
+Each sidebar entry shows the folder's manifest title and how many `.txt`
+files it holds, so you can tell folders apart without opening them.
+
+Card images use `object-fit: contain`, not `cover` — a manifest image is
+always shown in full (letterboxed on the card's background if its aspect
+ratio doesn't match 16:9), never cropped to fill the frame.
 
 ## One card per .txt file
 
@@ -83,30 +106,49 @@ test folder is self-contained.
 
 Two strategies, tried in order:
 
-1. **GitHub API** — on a `username.github.io/repo-name/` URL, resolves the
-   owner/repo from the URL path and asks
-   `api.github.com/repos/{owner}/{repo}/git/trees/{branch}?recursive=1` for
-   the whole file tree in one request (tries `main`, then `master`). That
-   single response gives every folder's `manifest.json` path AND every
-   `.txt` file inside it — no extra requests per folder. This is what runs
-   on the deployed Pages site. Needs the repo to be public — GitHub
-   rate-limits unauthenticated requests (60/hour per IP), and the page
-   shows a clear message + retry button if that's hit.
+1. **GitHub API, via a Cloudflare Worker proxy** — on a
+   `username.github.io/repo-name/` URL, the page calls a Cloudflare Worker
+   instead of `api.github.com` directly. The Worker holds a GitHub token
+   as a secret and forwards the request with it, so the 5000/hour
+   authenticated limit is shared across all visitors instead of each
+   visitor's browser burning through the 60/hour unauthenticated limit on
+   its own IP. The Worker also edge-caches successful responses for 60
+   seconds, so a burst of visitors barely touches the quota at all. See
+   `js/worker.js` for the reference copy of what's deployed, and "Rate
+   limits" below for setup. If the Worker itself gets rate-limited (rare),
+   the page shows a clear message + retry button rather than a silent
+   failure.
 2. **Directory-listing fallback** — if the GitHub API path doesn't apply
    (not on a `github.io` URL, e.g. local preview), asks the server for
    `cookies/`'s own directory index for the folder names, then each
    folder's own index for its `.txt` files. This is what makes
    `python3 -m http.server` work locally.
 
-If one folder's `manifest.json` is missing or invalid, only that folder's
-card(s) show an error — the rest of the gallery still loads normally. A
-folder with a valid manifest but no `.txt` files yet shows a small "no
-cookie files" note instead of silently disappearing.
+If one folder's `manifest.json` is missing or invalid, its sidebar entry
+still shows up (marked with ⚠) but its gallery pane explains the problem
+instead of showing cards. A folder with a valid manifest but no `.txt`
+files yet shows a small "no cookie files" note in its gallery pane instead
+of silently disappearing from the sidebar.
 
-**Lots of test folders?** The gallery panel caps its own height and
-scrolls internally (the toolbar with the count + refresh button stays
-put above it), so adding many entries never stretches the whole page —
-it stays a fixed-size box on both desktop and mobile.
+## Rate limits — the Cloudflare Worker
+
+`js/app.js` calls a Cloudflare Worker at a fixed URL (search for
+`workers.dev` in `discoverFoldersViaGitHubApi`) instead of GitHub directly.
+To stand up your own:
+
+1. Create a GitHub Personal Access Token (classic, no scopes needed for a
+   public repo) at `github.com/settings/tokens/new`.
+2. Create a Cloudflare Worker, paste in `js/worker.js`, deploy it.
+3. In the Worker's settings, add `GITHUB_TOKEN` as an encrypted secret
+   (the token from step 1).
+4. In `js/worker.js`, set `ALLOWED_ORIGINS` to your GitHub Pages origin so
+   only your own site can spend the Worker's quota.
+5. Point the `url` in `discoverFoldersViaGitHubApi` (in `js/app.js`) at
+   your Worker's `/tree/<branch>` endpoint.
+
+Without a Worker, swap that fetch back to `api.github.com` directly and
+you're back to the unauthenticated 60/hour-per-visitor-IP limit — fine for
+low traffic, easy to hit while actively testing.
 
 ## Local preview
 
@@ -118,5 +160,6 @@ then open `http://localhost:8000/`.
 ## Deploying
 
 Push to GitHub, enable Pages (serve from the root of `main` or `/docs`),
-done — it's a fully static site. Keep the repo **public** since the card
-gallery depends on the unauthenticated GitHub API.
+done — it's a fully static site. Set up the Cloudflare Worker (see "Rate
+limits" above) so the Test files gallery doesn't run into the
+unauthenticated GitHub API limit under real traffic.
