@@ -62,6 +62,7 @@ const I18N = {
     tf_error: "Couldn't load the test entries.",
     tf_retry: "Try again",
     tf_count: "{n} cookie file(s) found",
+    tf_file_count: "{n} file(s)",
     tf_open_fail: "Couldn't copy — try again.",
     tf_open_fail_status: "Server responded with {status}.",
     tf_manifest_bad: "This entry's manifest.json is missing or invalid.",
@@ -140,6 +141,7 @@ const I18N = {
     tf_error: "টেস্ট এন্ট্রি লোড করা যায়নি।",
     tf_retry: "আবার চেষ্টা করুন",
     tf_count: "{n}টা কুকি ফাইল পাওয়া গেছে",
+    tf_file_count: "{n}টা ফাইল",
     tf_open_fail: "কপি করা যায়নি — আবার চেষ্টা করুন।",
     tf_open_fail_status: "সার্ভার রেসপন্স {status}।",
     tf_manifest_bad: "এই এন্ট্রির manifest.json পাওয়া যায়নি বা সঠিক নয়।",
@@ -420,7 +422,8 @@ function rebuildBookmarklet(lang){
 const tfState = {
   status: 'idle',       // idle | loading | loaded | error
   folders: [],           // { slug, manifestPath, manifest, manifestError, txtFiles: [{path,label,cache}] }
-  error: null
+  error: null,
+  selectedSlug: null      // which folder is showing in the gallery pane
 };
 
 function guessRepoFromLocation(){
@@ -587,6 +590,13 @@ async function loadManifest(){
 
     tfState.folders = folders;
     tfState.status = 'loaded';
+    // Default to the first folder so the gallery isn't empty on load;
+    // keep the previous selection if it still exists (e.g. after a
+    // manual refresh), so re-clicking Refresh doesn't jump you back
+    // to folder #1 while you're looking at folder #2.
+    if (!folders.some(f => f.slug === tfState.selectedSlug)) {
+      tfState.selectedSlug = folders.length ? folders[0].slug : null;
+    }
   } catch (err) {
     tfState.status = 'error';
     tfState.error = err;
@@ -656,14 +666,16 @@ function buildOpenButton(siteLink){
 }
 
 function renderTestFiles(){
+  const sidebar = document.getElementById('tfSidebar');
   const grid = document.getElementById('tfBody');
   const count = document.getElementById('tfCount');
   const refreshBtn = document.getElementById('tfRefresh');
-  if (!grid) return;
+  if (!grid || !sidebar) return;
 
   if (tfState.status === 'idle' || tfState.status === 'loading') {
     count.textContent = t('tf_loading_short');
     refreshBtn.disabled = true;
+    sidebar.innerHTML = '';
     grid.innerHTML = '';
     const wrap = document.createElement('div');
     wrap.className = 'tf-state';
@@ -680,6 +692,7 @@ function renderTestFiles(){
     const isRateLimited = msg === 'rate-limited';
     const isNotGithubPages = msg === 'not-github-pages';
     count.textContent = '';
+    sidebar.innerHTML = '';
     grid.innerHTML = '';
     const wrap = document.createElement('div');
     wrap.className = 'tf-state err';
@@ -698,22 +711,10 @@ function renderTestFiles(){
     return;
   }
 
-  // loaded — flatten folders into one card per .txt file
-  const cards = [];
-  tfState.folders.forEach(folder => {
-    if (folder.manifestError) {
-      cards.push({ kind: 'error', folder });
-      return;
-    }
-    if (folder.txtFiles.length === 0) {
-      cards.push({ kind: 'empty-folder', folder });
-      return;
-    }
-    folder.txtFiles.forEach(file => cards.push({ kind: 'file', folder, file }));
-  });
-
-  if (cards.length === 0) {
+  // loaded — nothing discovered at all
+  if (tfState.folders.length === 0) {
     count.textContent = '';
+    sidebar.innerHTML = '';
     grid.innerHTML = '';
     const wrap = document.createElement('div');
     wrap.className = 'tf-state';
@@ -723,63 +724,81 @@ function renderTestFiles(){
     return;
   }
 
-  count.textContent = t('tf_count', { n: cards.length });
+  // -- sidebar: one entry per folder, independent of which is selected --
+  sidebar.innerHTML = '';
+  tfState.folders.forEach(folder => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'tf-folder-btn' + (folder.slug === tfState.selectedSlug ? ' active' : '');
+
+    const name = document.createElement('span');
+    name.className = 'tf-folder-name';
+    name.textContent = (folder.manifest && folder.manifest.title) || folder.slug;
+
+    const meta = document.createElement('span');
+    meta.className = 'tf-folder-meta';
+    meta.textContent = folder.manifestError
+      ? '⚠ ' + folder.slug
+      : t('tf_file_count', { n: folder.txtFiles.length });
+
+    btn.appendChild(name);
+    btn.appendChild(meta);
+    btn.addEventListener('click', () => {
+      tfState.selectedSlug = folder.slug;
+      renderTestFiles();
+    });
+    sidebar.appendChild(btn);
+  });
+
+  // -- gallery: cards for only the selected folder --
+  const active = tfState.folders.find(f => f.slug === tfState.selectedSlug) || tfState.folders[0];
   grid.innerHTML = '';
 
-  cards.forEach((c, idx) => {
+  if (!active) return;
+
+  if (active.manifestError) {
+    count.textContent = '';
+    const wrap = document.createElement('div');
+    wrap.className = 'tf-state err';
+    const p = document.createElement('p');
+    p.textContent = active.manifestError.status
+      ? t('tf_open_fail_status', { status: active.manifestError.status })
+      : t('tf_manifest_bad');
+    wrap.appendChild(p);
+    grid.appendChild(wrap);
+    return;
+  }
+
+  if (active.txtFiles.length === 0) {
+    count.textContent = '';
+    const wrap = document.createElement('div');
+    wrap.className = 'tf-state';
+    const p = document.createElement('p');
+    p.textContent = t('tf_no_txt');
+    wrap.appendChild(p);
+    grid.appendChild(wrap);
+    return;
+  }
+
+  count.textContent = t('tf_count', { n: active.txtFiles.length });
+  const m = active.manifest || {};
+
+  active.txtFiles.forEach((file, idx) => {
     const card = document.createElement('div');
     card.className = 'tcard';
     const num = document.createElement('span');
     num.className = 'tcard-num';
     num.textContent = '#' + String(idx + 1).padStart(2, '0');
 
-    if (c.kind === 'error') {
-      const media = document.createElement('div');
-      media.className = 'tcard-media';
-      media.innerHTML = '<div class="ph">⚠️</div>';
-      media.appendChild(num);
-      const title = document.createElement('div');
-      title.className = 'tcard-title';
-      title.textContent = c.folder.slug;
-      const err = document.createElement('div');
-      err.className = 'tcard-err-note';
-      err.textContent = c.folder.manifestError.status
-        ? t('tf_open_fail_status', { status: c.folder.manifestError.status })
-        : t('tf_manifest_bad');
-      card.appendChild(media);
-      card.appendChild(title);
-      card.appendChild(err);
-      grid.appendChild(card);
-      return;
-    }
-
-    if (c.kind === 'empty-folder') {
-      const m = c.folder.manifest || {};
-      const media = buildCardMedia(m, num);
-      const title = document.createElement('div');
-      title.className = 'tcard-title';
-      title.textContent = m.title || c.folder.slug;
-      const err = document.createElement('div');
-      err.className = 'tcard-err-note';
-      err.textContent = t('tf_no_txt');
-      card.appendChild(media);
-      card.appendChild(title);
-      card.appendChild(err);
-      grid.appendChild(card);
-      return;
-    }
-
-    // kind === 'file'
-    const m = c.folder.manifest || {};
     const media = buildCardMedia(m, num);
 
     const title = document.createElement('div');
     title.className = 'tcard-title';
-    title.textContent = m.title || c.folder.slug;
+    title.textContent = m.title || active.slug;
 
     const fname = document.createElement('div');
     fname.className = 'tcard-fname';
-    fname.textContent = c.file.label;
+    fname.textContent = file.label;
 
     const desc = document.createElement('div');
     desc.className = 'tcard-desc';
@@ -792,7 +811,7 @@ function renderTestFiles(){
     copyBtn.type = 'button';
     copyBtn.className = 'tcard-copy';
     copyBtn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg><span>' + t('tf_copy') + '</span>';
-    copyBtn.addEventListener('click', () => copyTxtFile(c.file, m.title || c.folder.slug, copyBtn));
+    copyBtn.addEventListener('click', () => copyTxtFile(file, m.title || active.slug, copyBtn));
 
     const openBtn = buildOpenButton(m.siteLink);
 
