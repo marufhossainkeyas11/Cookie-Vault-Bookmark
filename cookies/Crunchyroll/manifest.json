@@ -1,6 +1,6 @@
 {
-  "title": "Prime Video",
-  "description": "Get the Netflix for free...",
-  "image": "./cookies/Test2/primevideo.png",
-  "siteLink": "https://primevideo.com"
+  "title": "Crunchyroll",
+  "description": "Watch anime, login Crunchyroll through cookies",
+  "image": "./cookies/Crunchyroll/crunchyroll.png",
+  "siteLink": "https://crunchyroll.com"
 }
