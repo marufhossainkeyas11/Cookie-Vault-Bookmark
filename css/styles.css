@@ -110,7 +110,7 @@ code{
 }
 .jar{ color:var(--accent-dark); }
 .heart{ color:var(--coral); }
-section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); }
+section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); scroll-margin-top:76px; }
 
 /* Section eyebrow + heading pattern, reused across sections */
 .eyebrow{
@@ -219,6 +219,39 @@ section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); }
   cursor:grab;
 }
 .header-install:active{ cursor:grabbing; }
+
+/* Touch devices can't drag these onto a bookmarks bar (there isn't one),
+   and a long-press would otherwise pop the browser's own "copy link /
+   open in new tab" menu mid-tap. Suppressing that callout here lets the
+   click handler (js/app.js) redirect to the mobile install steps instead. */
+.bookmarklet-link{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  user-select:none;
+}
+
+/* =========================================================
+   3b. FLOATING "JUMP TO TEST FILES" BUTTON
+   Always visible — the test gallery sits well below the fold,
+   so this stays one tap away from anywhere on the page.
+========================================================= */
+.jump-fab{
+  position:fixed;
+  right:var(--sp-5);
+  bottom:var(--sp-5);
+  z-index:40;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:var(--ink);
+  color:var(--paper);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:var(--shadow-float);
+  text-decoration:none;
+  border: 2px solid var(--bg);
+}
 
 /* =========================================================
    4. HERO
@@ -357,6 +390,119 @@ section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); }
   color:var(--muted);
   margin-bottom:var(--sp-5);
 }
+
+/* -- Desktop / Mobile tab toggle --
+   BUG FIX: .how-steps{display:grid} and .how-steps-mobile{display:grid}
+   are class selectors, which beat the browser's own [hidden]{display:none}
+   UA rule at equal specificity. So setting the `hidden` attribute via JS
+   was NOT actually hiding the inactive panel — both panels rendered
+   stacked on top of each other, which is why tapping the tabs looked
+   like it did nothing. This rule re-asserts hidden with !important so
+   it always wins. */
+[data-platform-panel][hidden]{ display:none !important; }
+
+.how-tabs{
+  display:inline-flex;
+  background:var(--paper-sunken);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:4px;
+  gap:2px;
+  margin-bottom:var(--sp-6);
+}
+.how-tab{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  font-weight:700;
+  font-size:var(--fs-sm);
+  padding:9px 18px;
+  min-height:40px;
+  border-radius:999px;
+  cursor:pointer;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+.how-tab svg{ pointer-events:none; }
+.how-tab span{ pointer-events:none; }
+.how-tab.active{
+  background:var(--ink);
+  color:var(--paper);
+}
+
+/* -- Screenshot slot inside a mobile step. Always visible as a
+   dashed placeholder box with a camera icon + label when empty;
+   drop an <img> inside the same div (see README) and it fills the
+   box edge-to-edge, dashed border and label included as a frame. -- */
+.how-step-shot{
+  position:relative;
+  margin-top:var(--sp-4);
+  aspect-ratio:1/1;
+  max-height:280px;
+  border:1.5px dashed var(--line);
+  border-radius:var(--radius-sm);
+  background:var(--paper-sunken);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:var(--muted);
+}
+.how-step-shot::before{
+  content:"";
+  width:28px;
+  height:28px;
+  background-color:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Cpath d='M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Cpath d='M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center/contain no-repeat;
+  opacity:.55;
+}
+.how-step-shot::after{
+  content:attr(data-shot);
+  font-family:var(--mono);
+  font-size:10px;
+  text-align:center;
+  padding:0 var(--sp-3);
+  opacity:.7;
+  word-break:break-word;
+}
+.how-step-shot:has(img)::before,
+.how-step-shot:has(img)::after,
+.how-step-shot.has-img::before,
+.how-step-shot.has-img::after{
+  display:none;
+}
+.how-step-shot img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:calc(var(--radius-sm) - 1.5px);
+  cursor:zoom-in;
+}
+.shot-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:var(--sp-5);
+  background:rgba(0,0,0,.82);
+}
+.shot-lightbox.open{ display:flex; }
+.shot-lightbox img{
+  max-width:100%;
+  max-height:100%;
+  border-radius:var(--radius-md);
+  cursor:zoom-out;
+}
+.how-steps-mobile .how-step{ display:flex; flex-direction:column; }
 
 /* =========================================================
    6. FORMATS
@@ -666,9 +812,23 @@ section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); }
 ========================================================= */
 footer{
   padding:var(--sp-6) 0 var(--sp-8);
-  text-align:center;
+  border-top:1px solid var(--line);
   color:var(--muted);
   font-size:var(--fs-sm);
+}
+.footer-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:var(--sp-2) var(--sp-5);
+  text-align:center;
+}
+.footer-brand{
+  font-weight:700;
+  color:var(--ink-soft);
+  font-size:var(--fs-xs);
+  letter-spacing:.02em;
 }
 .toast{
   position:fixed;
@@ -698,8 +858,15 @@ footer{
 @media (min-width: 901px){
   .hero-grid{ grid-template-columns: 1.1fr 1fr; }
   .how-steps{ grid-template-columns: repeat(3, 1fr); }
+  .how-steps-mobile{ grid-template-columns: repeat(3, 1fr); }
   .fmt-grid{ grid-template-columns: repeat(3, 1fr); }
   .feat-list{ grid-template-columns: repeat(2, 1fr); }
+
+  /* Jump-to-test-files FAB is a mobile convenience (test gallery is
+     several screens down on a phone). On desktop the section is one
+     scroll or a click away, and the FAB just sits awkwardly over
+     content, so it's hidden here instead. */
+  .jump-fab{ display:none; }
 
   .tf-shell{
     grid-template-columns: 260px 1fr;
@@ -717,12 +884,14 @@ footer{
 ========================================================= */
 @media (max-width: 900px){
   .container{ padding-left:var(--sp-4); padding-right:var(--sp-4); }
-  section{ padding-top:var(--sp-6); padding-bottom:var(--sp-6); }
+  section{ padding-top:var(--sp-6); padding-bottom:var(--sp-6); scroll-margin-top:64px; }
 
   .site-header .container{ height:56px; gap:var(--sp-2); }
   .brand span.brand-text{ display:none; } /* icon-only brand on phones */
   .header-install{ padding:8px 12px; font-size:var(--fs-xs); }
   .header-install .install-label{ display:none; } /* icon-only CTA on phones, still fully functional */
+
+  .jump-fab{width:44px; height:44px; right:var(--sp-4); bottom:var(--sp-4); }
 
   .hero{ padding-top:var(--sp-6); }
   .hero-grid{ grid-template-columns:1fr; gap:var(--sp-6); }
