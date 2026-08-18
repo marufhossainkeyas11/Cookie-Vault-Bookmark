@@ -21,6 +21,7 @@ const I18N = {
     bar_mail: "Mail",
     btn_install: "🍪 Cookie Vault",
     btn_install_title: "Drag to your bookmarks bar",
+    jump_fab_title: "Jump to test files",
     eyebrow: "BOOKMARKLET · 4742 CHARACTERS · NO INSTALL",
     hero_title: 'Manage <span class="jar">cookies</span> on any site in one click',
     hero_lede: "Cookie Vault is a bookmarklet — copy, paste, or inject cookies on any page without installing an extension. Paste JSON, a Header String, or Netscape format and it figures out the rest.",
@@ -35,6 +36,18 @@ const I18N = {
     step2_body: 'Go to the website whose cookies you want to work with, then click <code>Cookie Vault</code> in your bookmarks bar. A light panel opens and the page behind it blurs.',
     step3_title: "Copy or inject",
     step3_body: 'To copy current cookies, pick a format and press <code>Copy</code>. To set new cookies, paste them into the textbox and press <code>Inject</code> — the format is auto-detected.',
+    how_tab_desktop: "Desktop",
+    how_tab_mobile: "Mobile",
+    mstep1_title: "Copy the raw code",
+    mstep1_body: 'Scroll down to <code>Raw code</code> near the bottom of this page and press <code>Copy</code>.',
+    mstep2_title: "Bookmark this page",
+    mstep2_body: 'Open your browser\'s menu (⋮) and tap the <b>★ star</b> icon to save this page as a bookmark.',
+    mstep3_title: "Confirm it saved",
+    mstep3_body: 'A <code>Bookmark saved</code> notice appears at the bottom — tap it (or open <code>Bookmarks</code> from the menu) to get back to it.',
+    mstep4_title: "Edit the bookmark",
+    mstep4_body: 'Open the saved bookmark\'s edit screen, keep the <code>Name</code> as it is, then clear the <code>URL</code> field and paste the code you copied in step 1.',
+    mstep5_title: "Run it from the address bar",
+    mstep5_body: "On any site, type the bookmark's name into the address bar — it shows up as a suggestion. Tap it and the panel opens.",
     formats_label: "Supported formats",
     formats_title: "Paste it, and it just knows",
     formats_intro: "Paste any one of these three formats and Cookie Vault parses and injects it correctly on its own — no need to pick a format manually.",
@@ -82,6 +95,7 @@ const I18N = {
     toast_copy_failed: "Couldn't copy — please select manually",
     toast_drag_drop: "Drop it on your bookmarks bar",
     toast_drag_alert: "Drag this button to your bookmarks bar (don't click it)",
+    toast_drag_mobile: "No bookmarks bar on phones — showing the mobile install steps below",
     toast_file_copied: "Copied {name}",
     // panel strings (injected into the page, keep short)
     panel_title: "Cookie Vault",
@@ -100,6 +114,7 @@ const I18N = {
     bar_mail: "মেইল",
     btn_install: "🍪 Cookie Vault",
     btn_install_title: "বুকমার্ক বার-এ টেনে আনুন",
+    jump_fab_title: "টেস্ট ফাইলে যান",
     eyebrow: "বুকমার্কলেট · ৪৭৪২ অক্ষর · কোনো ইনস্টল নেই",
     hero_title: 'যেকোনো সাইটে এক ক্লিকে<span class="jar"> কুকি</span> ম্যানেজ করুন',
     hero_lede: "Cookie Vault একটা বুকমার্কলেট — এক্সটেনশন ইনস্টলের ঝামেলা ছাড়াই যেকোনো পেজে কুকি কপি, পেস্ট বা ইনজেক্ট করার জন্য। JSON, Header String বা Netscape — যেকোনো ফরম্যাট পেস্ট করলেই বুঝে নেয়।",
@@ -114,6 +129,18 @@ const I18N = {
     step2_body: 'যে ওয়েবসাইটের কুকি নিয়ে কাজ করতে চান, সেখানে গিয়ে বুকমার্ক বার থেকে <code>Cookie Vault</code>-এ ক্লিক করুন। একটা হালকা প্যানেল খুলবে, পেছনের পেজ ঝাপসা হয়ে যাবে।',
     step3_title: "কপি অথবা ইনজেক্ট করুন",
     step3_body: 'বর্তমান কুকি কপি করতে ফরম্যাট বেছে <code>Copy</code> চাপুন। নতুন কুকি বসাতে টেক্সটবক্সে পেস্ট করে <code>Inject</code> চাপুন — ফরম্যাট অটো-ডিটেক্ট হবে।',
+    how_tab_desktop: "ডেক্সটপ",
+    how_tab_mobile: "মোবাইল",
+    mstep1_title: "রॉ কোড কপি করুন",
+    mstep1_body: 'এই পেজের নিচের দিকে <code>Raw code</code> অংশে গিয়ে <code>Copy</code> চাপুন।',
+    mstep2_title: "এই পেজটা বুকমার্ক করুন",
+    mstep2_body: 'ব্রাউজারের মেনু (⋮) খুলে <b>★ স্টার</b> আইকনে ট্যাপ করে এই পেজটা বুকমার্ক হিসেবে সেভ করুন।',
+    mstep3_title: "সেভ হয়েছে কিনা নিশ্চিত করুন",
+    mstep3_body: 'নিচে <code>Bookmark saved</code> লেখা একটা নোটিশ আসবে — সেটাতে ট্যাপ করুন (অথবা মেনু থেকে <code>Bookmarks</code> খুলুন) সেই বুকমার্কে ফিরে যেতে।',
+    mstep4_title: "বুকমার্কটা এডিট করুন",
+    mstep4_body: 'সেভ করা বুকমার্কের এডিট স্ক্রিন খুলুন, <code>Name</code> যা আছে তাই থাকুক, তারপর <code>URL</code> ফিল্ড মুছে ১ নম্বর ধাপে কপি করা কোডটা পেস্ট করে দিন।',
+    mstep5_title: "অ্যাড্রেস বার থেকে চালান",
+    mstep5_body: "যেকোনো সাইটে গিয়ে অ্যাড্রেস বারে বুকমার্কের নাম টাইপ করুন — সাজেশনে চলে আসবে। ট্যাপ করলেই প্যানেল খুলে যাবে।",
     formats_label: "সাপোর্টেড ফরম্যাট",
     formats_title: "পেস্ট করলেই চিনে নেয়",
     formats_intro: "তিনটা ফরম্যাটের যেকোনো একটা পেস্ট করলেই Cookie Vault নিজে থেকে সঠিকভাবে পার্স করে ইনজেক্ট করে দেয় — আলাদা করে ফরম্যাট বেছে দিতে হয় না।",
@@ -161,6 +188,7 @@ const I18N = {
     toast_copy_failed: "কপি করা যায়নি, ম্যানুয়ালি সিলেক্ট করুন",
     toast_drag_drop: "বুকমার্ক বার-এ ছেড়ে দিন",
     toast_drag_alert: "এই বাটনটা বুকমার্ক বার-এ টেনে আনুন (ক্লিক করবেন না)",
+    toast_drag_mobile: "ফোনে বুকমার্ক বার থাকে না — নিচে মোবাইলের ইনস্টল ধাপগুলো দেখানো হচ্ছে",
     toast_file_copied: "{name} কপি হয়েছে",
     panel_title: "Cookie Vault",
     panel_copy: "Copy",
@@ -845,6 +873,26 @@ document.getElementById('langSwitch').addEventListener('click', (e) => {
   applyLang(btn.getAttribute('data-lang'));
 });
 
+// Desktop / Mobile tabs inside "How it works" — two different install
+// flows (drag-to-bookmarks-bar vs. no-bookmarks-bar-so-edit-a-saved-one),
+// shown one at a time so neither confuses someone following the other.
+const howTabs = document.getElementById('howTabs');
+if (howTabs) {
+  howTabs.addEventListener('click', (e) => {
+    const btn = e.target.closest('.how-tab');
+    if (!btn) return;
+    const platform = btn.getAttribute('data-platform');
+    howTabs.querySelectorAll('.how-tab').forEach(b => {
+      const active = b === btn;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-selected', String(active));
+    });
+    document.querySelectorAll('[data-platform-panel]').forEach(panel => {
+      panel.hidden = panel.getAttribute('data-platform-panel') !== platform;
+    });
+  });
+}
+
 document.getElementById('copyCodeBtn').addEventListener('click', async () => {
   const codeEl = document.getElementById('codeText');
   try {
@@ -870,11 +918,33 @@ document.getElementById('tfRefresh').addEventListener('click', () => {
 // Drag feedback (visual only — actual bookmark creation is native browser behavior).
 // Bookmarklet links use href="#" pre-drag safety: prevent navigation on click since
 // these are meant to be dragged to the bookmarks bar, not clicked on this page.
+//
+// Touch devices can't do this drag reliably — a long-press on a link in mobile
+// Chrome/Safari opens the browser's own "copy link / open in new tab" menu
+// instead of starting an HTML5 drag, so telling a phone user to "drag" here
+// just leads them into that native menu. Detect touch and route those taps
+// to the manual mobile install flow (tab + scroll) instead of the drag hint.
+const isTouchDevice = matchMedia('(hover: none) and (pointer: coarse)').matches;
+
 document.querySelectorAll('.bookmarklet-link').forEach(el => {
+  if (isTouchDevice) {
+    // No href = nothing for a long-press to open a "copy link / open in
+    // new tab" menu on. draggable=true was also just inviting a drag
+    // gesture that can't actually work on touch, so it's removed too.
+    el.removeAttribute('href');
+    el.removeAttribute('draggable');
+  }
   el.addEventListener('dragstart', () => showToast(I18N[currentLang].toast_drag_drop));
   el.addEventListener('click', (e) => {
     e.preventDefault();
-    showToast(I18N[currentLang].toast_drag_alert);
+    if (isTouchDevice) {
+      showToast(I18N[currentLang].toast_drag_mobile);
+      const mobileTab = howTabs && howTabs.querySelector('[data-platform="mobile"]');
+      if (mobileTab) mobileTab.click();
+      document.getElementById('how').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      showToast(I18N[currentLang].toast_drag_alert);
+    }
   });
 });
 
@@ -883,3 +953,25 @@ document.querySelectorAll('.bookmarklet-link').forEach(el => {
 ========================================================= */
 applyLang(currentLang);
 loadManifest();
+
+// Fallback for browsers without :has() support (older Firefox/Safari):
+// mark screenshot slots that already contain an <img> so the CSS can
+// hide the placeholder icon/label without depending on :has(). Safe
+// to run once at load — these slots are static markup, not re-rendered.
+document.querySelectorAll('.how-step-shot').forEach(slot => {
+  if (slot.querySelector('img')) slot.classList.add('has-img');
+});
+
+// Tap a mobile step screenshot to view it full-size (simple lightbox).
+const shotLightbox = document.createElement('div');
+shotLightbox.className = 'shot-lightbox';
+shotLightbox.innerHTML = '<img alt="">';
+document.body.appendChild(shotLightbox);
+document.querySelectorAll('.how-step-shot img').forEach(img => {
+  img.addEventListener('click', () => {
+    shotLightbox.querySelector('img').src = img.src;
+    shotLightbox.querySelector('img').alt = img.alt;
+    shotLightbox.classList.add('open');
+  });
+});
+shotLightbox.addEventListener('click', () => shotLightbox.classList.remove('open'));
