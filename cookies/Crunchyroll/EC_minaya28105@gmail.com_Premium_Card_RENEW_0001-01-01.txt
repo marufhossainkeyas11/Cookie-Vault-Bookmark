@@ -1,0 +1,173 @@
+[
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1804482990,
+    "name": "_ga",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.1.205098761.1769922991"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1804483032,
+    "name": "FPID",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "FPID2.2.Qaug3o8ZfhUhqaegVbF60miYWB8xSPAXj0SKG7Kwl38%3D.1769922991"
+  },
+  {
+    "domain": ".www.crunchyroll.com",
+    "expirationDate": 1801459028,
+    "name": "OptanonAlertBoxClosed",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "2026-02-01T05:17:08.658Z"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1804483031,
+    "name": "_ga_METRICID",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1769922990$o1$g1$t1769923031$j19$l0$h1006302184"
+  },
+  {
+    "domain": "static.crunchyroll.com",
+    "expirationDate": 1802140611,
+    "name": "muxData",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "mux_viewer_id=07fd2f2a-a00b-42db-9a3e-496be41d1250&msn=0.7159992355618389&sid=9fb614a9-c63b-4178-9e88-72b0e31b4003&sst=1770600209786&sex=1770606111179"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1812962165,
+    "name": "cf_clearance",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "Wm8i8P7wTCKtUAMSWwTascpC.NLY7ug5epLty5r.kGw-1781426165-1.2.1.1-KrqJJQHjsz6RgcY0iEpBP8A_3DlR9izKj6tdsVpz1nGR9cU8x493NddPfYco3OezABZ0YI2lMEx39E2LE7XA5OviCiheHF7eZSYUxZQxEARvNQUmWMkSlyylST1SYvavQnKDX8JNzb2UJXnfjOe57oTp2MOqW46ZOsn9_0DO3FBhTwT3AjN.uEyJ8FDDuJ.rcrF6IX0xwMJOpOe529zlIYRj7s7x5cXmXXeJeQwSSlfzW.Jjve.lSZb2gavcy0p_Tz5j5WygjTry8VWcguNe3iVqBBGtAk0yLQZ8.oZ3AcuytpRazGEXUFBBDHR_RWCrd9C49w4Vjibc8DmQs3PUvA"
+  },
+  {
+    "domain": ".sso.crunchyroll.com",
+    "expirationDate": 1812962174,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Sun+Jun+14+2026+02%3A36%3A14+GMT-0600+(hora+est%C3%A1ndar+central)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&genVendors=&consentId=320a4649-536b-4f84-ae0f-c75ce669e72c&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fsso.crunchyroll.com%2Fes%2Flogin&groups=C0001%3A1%2CC0002%3A1"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1815986241,
+    "name": "etp_rt",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "015327e3-9049-45c2-93d3-0a822de6619e"
+  },
+  {
+    "domain": ".www.crunchyroll.com",
+    "expirationDate": 1812962335,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Sun+Jun+14+2026+02%3A38%3A55+GMT-0600+(hora+est%C3%A1ndar+central)&version=202601.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&genVendors=V1%3A0%2CV17%3A0%2CV11%3A0%2CV3%3A0%2CV7%3A0%2CV2%3A0%2C&consentId=af734d5b-651a-4f17-b2f2-df413f0525f2&interactionCount=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A1%2CC0002%3A1%2CC0004%3A1&geolocation=%3B&isAnonUser=1&AwaitingReconsent=false"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1815986337,
+    "name": "ab.storage.deviceId.80f403d2-1c18-471d-b0ef-243d1d646436",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "%7B%22g%22%3A%22cff2e62c-e314-d0e5-f5bf-77b2802add2d%22%2C%22c%22%3A1781426337748%2C%22l%22%3A1781426337748%7D"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1815986337,
+    "name": "ab.storage.userId.80f403d2-1c18-471d-b0ef-243d1d646436",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "%7B%22g%22%3A%229ab13f7b-8aeb-5ccb-8540-b0ba2e38bc06%22%2C%22c%22%3A1781426337745%2C%22l%22%3A1781426337747%7D"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1815986337,
+    "name": "ab.storage.sessionId.80f403d2-1c18-471d-b0ef-243d1d646436",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "%7B%22g%22%3A%221c76737c-0b8b-848a-87b2-996b5e497926%22%2C%22e%22%3A1781428137753%2C%22c%22%3A1781426337746%2C%22l%22%3A1781426337753%7D"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1812962336,
+    "name": "ajs_anonymous_id",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "6fb970db-4c5d-4c7c-ac6e-dfed7adc9720"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1812962336,
+    "name": "ajs_user_id",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "9ab13f7b-8aeb-5ccb-8540-b0ba2e38bc06"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1812962335,
+    "name": "c_locale",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "es-419"
+  },
+  {
+    "domain": "www.crunchyroll.com",
+    "expirationDate": 1812962337,
+    "name": "bitmovin_analytics_uuid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "11c21cd8-8e52-487d-9a54-7420a3639571"
+  },
+  {
+    "domain": "www.crunchyroll.com",
+    "expirationDate": 1812962721,
+    "name": "muxData",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "=undefined&mux_viewer_id=3cf953d7-3f11-4d63-b620-c778c54779d7&msn=0.4189096599333543&sid=11a410a1-532a-455e-9cdf-dd4ac54779d9&sst=1781426256345&sex=1781428221113"
+  },
+  {
+    "domain": ".crunchyroll.com",
+    "expirationDate": 1815987147,
+    "name": "device_id",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "c3758015-784f-4842-ba13-6dab9679c267"
+  },
+  {
+    "domain": "www.crunchyroll.com",
+    "expirationDate": 1812963482,
+    "name": "_dd_s",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isExpired=1&aid=a4bea991-9c93-43ff-b308-000f9c1c9d72"
+  }
+]
