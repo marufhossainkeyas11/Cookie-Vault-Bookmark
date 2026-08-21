@@ -2,5 +2,6 @@
   "title": "Crunchyroll",
   "description": "Watch anime, login Crunchyroll through cookies",
   "image": "./cookies/Crunchyroll/crunchyroll.png",
+  "logo": "./cookies/Crunchyroll/logo.png",
   "siteLink": "https://crunchyroll.com"
 }
