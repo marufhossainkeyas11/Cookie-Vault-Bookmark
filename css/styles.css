@@ -251,7 +251,11 @@ section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); scroll-margin-top:
   box-shadow:var(--shadow-float);
   text-decoration:none;
   border: 2px solid var(--bg);
+  cursor:pointer;
+  padding:0;
 }
+.jump-fab svg{ transition:transform .25s ease; }
+.jump-fab.is-up svg{ transform:rotate(180deg); }
 
 /* =========================================================
    4. HERO
@@ -609,8 +613,8 @@ section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); scroll-margin-top:
 }
 .tf-folder-btn{
   display:flex;
-  flex-direction:column;
-  gap:2px;
+  align-items:center;
+  gap:var(--sp-3);
   width:100%;
   text-align:left;
   border:0;
@@ -625,6 +629,30 @@ section{ padding-top:var(--sp-8); padding-bottom:var(--sp-8); scroll-margin-top:
 .tf-folder-btn.active{
   background:var(--paper);
   border-left-color:var(--accent);
+}
+.tf-folder-logo{
+  flex:0 0 auto;
+  width:28px;
+  height:28px;
+  border-radius:7px;
+  overflow:hidden;
+  background:var(--paper-sunken);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  border:1px solid var(--line);
+}
+.tf-folder-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.tf-folder-text{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  min-width:0;
 }
 .tf-folder-name{
   font-weight:700;
@@ -878,9 +906,10 @@ footer{
 /* =========================================================
    11. MOBILE  (<= 900px)
    Not just a squeezed desktop layout — the sidebar becomes a
-   horizontally-scrolling pill strip above the gallery instead
-   of a side column, since a side column would eat too much of
-   a phone's width to be usable.
+   wrapping grid of chips above the gallery instead of a side
+   column, since a side column would eat too much of a phone's
+   width to be usable, and a horizontal scroller would hide
+   most test names off-screen.
 ========================================================= */
 @media (max-width: 900px){
   .container{ padding-left:var(--sp-4); padding-right:var(--sp-4); }
@@ -904,33 +933,36 @@ footer{
   .fmt-grid{ grid-template-columns:1fr; }
   .feat-list{ grid-template-columns:1fr; }
 
-  /* -- test files: sidebar becomes a horizontal pill scroller -- */
+  /* -- test files: sidebar becomes a wrapping grid of compact chips —
+     every test name stays visible at once instead of hiding most of
+     them off-screen behind a sideways scroll. -- */
   .tf-shell{
     grid-template-columns:1fr;
     grid-template-rows:auto 1fr;
   }
   .tf-sidebar{
     display:flex;
-    flex-direction:row;
-    overflow-x:auto;
-    overflow-y:hidden;
+    flex-wrap:wrap;
+    gap:1px;
     border-right:0;
     border-bottom:1px solid var(--line);
-    -webkit-overflow-scrolling:touch;
+    max-height:none;
   }
   .tf-folder-btn{
-    flex:0 0 auto;
+    flex:1 1 150px;
     width:auto;
-    min-width:140px;
+    min-width:0;
+    gap:var(--sp-2);
     border-left:0;
-    border-bottom:0;
-    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
     border-top:3px solid transparent;
+    padding:var(--sp-3) var(--sp-4);
   }
   .tf-folder-btn.active{
     border-left-color:transparent;
     border-top-color:var(--accent);
   }
+  .tf-folder-logo{ width:24px; height:24px; font-size:12px; }
   .tf-gallery{ max-height:70vh; }
   .tf-grid{ grid-template-columns:1fr; }
 

@@ -22,6 +22,7 @@ const I18N = {
     btn_install: "🍪 Cookie Vault",
     btn_install_title: "Drag to your bookmarks bar",
     jump_fab_title: "Jump to test files",
+    jump_fab_title_up: "Back to top",
     eyebrow: "BOOKMARKLET · 4742 CHARACTERS · NO INSTALL",
     hero_title: 'Manage <span class="jar">cookies</span> on any site in one click',
     hero_lede: "Cookie Vault is a bookmarklet — copy, paste, or inject cookies on any page without installing an extension. Paste JSON, a Header String, or Netscape format and it figures out the rest.",
@@ -115,6 +116,7 @@ const I18N = {
     btn_install: "🍪 Cookie Vault",
     btn_install_title: "বুকমার্ক বার-এ টেনে আনুন",
     jump_fab_title: "টেস্ট ফাইলে যান",
+    jump_fab_title_up: "উপরে ফিরে যান",
     eyebrow: "বুকমার্কলেট · ৪৭৪২ অক্ষর · কোনো ইনস্টল নেই",
     hero_title: 'যেকোনো সাইটে এক ক্লিকে<span class="jar"> কুকি</span> ম্যানেজ করুন',
     hero_lede: "Cookie Vault একটা বুকমার্কলেট — এক্সটেনশন ইনস্টলের ঝামেলা ছাড়াই যেকোনো পেজে কুকি কপি, পেস্ট বা ইনজেক্ট করার জন্য। JSON, Header String বা Netscape — যেকোনো ফরম্যাট পেস্ট করলেই বুঝে নেয়।",
@@ -243,9 +245,14 @@ function applyLang(lang){
   });
 
   document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    if (el.id === 'jumpFab') return; // handled by jumpFab's own state-aware logic below
     const key = el.getAttribute('data-i18n-title');
     if (dict[key] !== undefined) el.setAttribute('title', dict[key]);
   });
+
+  // jump FAB's title tracks scroll direction (up/down), not just
+  // language, so re-derive it here instead of the generic sweep above.
+  if (typeof window.updateJumpFabLang === 'function') window.updateJumpFabLang();
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
@@ -419,10 +426,13 @@ function rebuildBookmarklet(lang){
 
      cookies/
        test-1/
-         manifest.json    { title, description, image, siteLink }
+         manifest.json    { title, description, image, logo?, siteLink }
          cookies.txt        any number of .txt files — each one
          cookies2.txt        becomes its own card, sharing the
          ...                 folder's manifest for title/image/link
+
+         logo is optional and square (used for the small sidebar
+         chip); when omitted, image is reused there instead.
        test-2/
          manifest.json
          cookies.txt
@@ -759,6 +769,27 @@ function renderTestFiles(){
     btn.type = 'button';
     btn.className = 'tf-folder-btn' + (folder.slug === tfState.selectedSlug ? ' active' : '');
 
+    // Small square logo from this folder's manifest image, so entries
+    // are recognizable at a glance — most useful on the mobile strip
+    // where several sites' names sit close together.
+    const logo = document.createElement('span');
+    logo.className = 'tf-folder-logo';
+    const m0 = folder.manifest;
+    const logoSrc = m0 && (m0.logo || m0.image);
+    if (logoSrc) {
+      const img = document.createElement('img');
+      img.src = logoSrc;
+      img.alt = '';
+      img.loading = 'lazy';
+      img.onerror = () => { logo.innerHTML = '🍪'; };
+      logo.appendChild(img);
+    } else {
+      logo.textContent = '🍪';
+    }
+
+    const text = document.createElement('span');
+    text.className = 'tf-folder-text';
+
     const name = document.createElement('span');
     name.className = 'tf-folder-name';
     name.textContent = (folder.manifest && folder.manifest.title) || folder.slug;
@@ -769,8 +800,10 @@ function renderTestFiles(){
       ? '⚠ ' + folder.slug
       : t('tf_file_count', { n: folder.txtFiles.length });
 
-    btn.appendChild(name);
-    btn.appendChild(meta);
+    text.appendChild(name);
+    text.appendChild(meta);
+    btn.appendChild(logo);
+    btn.appendChild(text);
     btn.addEventListener('click', () => {
       tfState.selectedSlug = folder.slug;
       renderTestFiles();
@@ -873,23 +906,37 @@ document.getElementById('langSwitch').addEventListener('click', (e) => {
   applyLang(btn.getAttribute('data-lang'));
 });
 
+// Touch devices can't drag a bookmarklet onto a bookmarks bar (there
+// isn't one on a phone), and a long-press would otherwise pop the
+// browser's own "copy link / open in new tab" menu mid-tap instead of
+// starting a drag. Declared up here (not just where it's used lower
+// down) because the how-tabs auto-select below also needs it on load.
+const isTouchDevice = matchMedia('(hover: none) and (pointer: coarse)').matches;
+
 // Desktop / Mobile tabs inside "How it works" — two different install
 // flows (drag-to-bookmarks-bar vs. no-bookmarks-bar-so-edit-a-saved-one),
 // shown one at a time so neither confuses someone following the other.
 const howTabs = document.getElementById('howTabs');
+function selectHowTab(platform){
+  if (!howTabs) return;
+  howTabs.querySelectorAll('.how-tab').forEach(b => {
+    const active = b.getAttribute('data-platform') === platform;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-selected', String(active));
+  });
+  document.querySelectorAll('[data-platform-panel]').forEach(panel => {
+    panel.hidden = panel.getAttribute('data-platform-panel') !== platform;
+  });
+}
 if (howTabs) {
+  // Auto-select the tab that matches the visitor's actual device on
+  // load, instead of always defaulting to "Desktop" — a phone visitor
+  // should land on the mobile flow without having to tap for it.
+  selectHowTab(isTouchDevice ? 'mobile' : 'desktop');
   howTabs.addEventListener('click', (e) => {
     const btn = e.target.closest('.how-tab');
     if (!btn) return;
-    const platform = btn.getAttribute('data-platform');
-    howTabs.querySelectorAll('.how-tab').forEach(b => {
-      const active = b === btn;
-      b.classList.toggle('active', active);
-      b.setAttribute('aria-selected', String(active));
-    });
-    document.querySelectorAll('[data-platform-panel]').forEach(panel => {
-      panel.hidden = panel.getAttribute('data-platform-panel') !== platform;
-    });
+    selectHowTab(btn.getAttribute('data-platform'));
   });
 }
 
@@ -909,6 +956,41 @@ document.getElementById('copyCodeBtn').addEventListener('click', async () => {
   }
 });
 
+// Jump FAB: points down to the test-files section while it's still
+// below the fold, then flips to point up (and scrolls to top) once
+// the visitor has scrolled past that section — a static down-only
+// arrow made no sense to keep staring downward after you'd already
+// overscrolled past the thing it was pointing at.
+const jumpFab = document.getElementById('jumpFab');
+const testFilesSection = document.getElementById('test-files');
+if (jumpFab && testFilesSection) {
+  let fabIsUp = false;
+  const setFabDirection = (up) => {
+    if (up === fabIsUp) return;
+    fabIsUp = up;
+    jumpFab.classList.toggle('is-up', up);
+    jumpFab.title = t(up ? 'jump_fab_title_up' : 'jump_fab_title');
+    jumpFab.setAttribute('aria-label', jumpFab.title);
+  };
+  setFabDirection(false);
+  window.updateJumpFabLang = () => {
+    jumpFab.title = t(fabIsUp ? 'jump_fab_title_up' : 'jump_fab_title');
+    jumpFab.setAttribute('aria-label', jumpFab.title);
+  };
+  // Flip once the section's top has scrolled above the viewport
+  // (rootMargin pulls the trigger line up a bit so it flips right as
+  // the section header passes, not only once it's fully gone).
+  const fabObserver = new IntersectionObserver(
+    (entries) => setFabDirection(entries[0].boundingClientRect.top < 0),
+    { rootMargin: '-64px 0px 0px 0px', threshold: 0 }
+  );
+  fabObserver.observe(testFilesSection);
+  jumpFab.addEventListener('click', () => {
+    const target = fabIsUp ? document.body : testFilesSection;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
 document.getElementById('tfRefresh').addEventListener('click', () => {
   const btn = document.getElementById('tfRefresh');
   btn.classList.add('spinning');
@@ -922,9 +1004,9 @@ document.getElementById('tfRefresh').addEventListener('click', () => {
 // Touch devices can't do this drag reliably — a long-press on a link in mobile
 // Chrome/Safari opens the browser's own "copy link / open in new tab" menu
 // instead of starting an HTML5 drag, so telling a phone user to "drag" here
-// just leads them into that native menu. Detect touch and route those taps
-// to the manual mobile install flow (tab + scroll) instead of the drag hint.
-const isTouchDevice = matchMedia('(hover: none) and (pointer: coarse)').matches;
+// just leads them into that native menu. isTouchDevice (declared above, near
+// the how-tabs auto-select) routes those taps to the manual mobile install
+// flow (tab + scroll) instead of the drag hint.
 
 document.querySelectorAll('.bookmarklet-link').forEach(el => {
   if (isTouchDevice) {
