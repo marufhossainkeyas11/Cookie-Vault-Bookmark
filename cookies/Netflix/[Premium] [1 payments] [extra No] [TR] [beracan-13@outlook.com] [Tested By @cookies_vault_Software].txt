@@ -1,0 +1,38 @@
+[
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1808086579,
+    "name": "NetflixId",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "v%3D3%26ct%3DBgjHlOvcAxKsA7iKV4AhO-1nMoEvkYTV8xFrmbNreMAX2_Omp1ImGOVPKU5YWUCsRj6FOXzmWZT_AmZRWkCRi-H1GplOI6U3CUkVpIwqO9hj9Gk5y2s9A3mk8VMBa97q9hNd984WPq0sn3d8NsISHpSMuD0fDggS6LRAvk-ZMeQY8lU9c55R64PpqXcCrGw-tziMJ95EmyPSGv3o2KlsXe2RSNExhAaB4UE5M3IrzzIsMJzOEqIs-x-pBPRdTXNaDjURtMdjJpWckFalPknF-nv7mmi8QeL8Xus_QUf1_27ZFPOC5Q1wRz8ZRYbkXadTZJj_zzwbdshQH_8o-E8NpLoJpeaDvdw7r8GZMUl9T9Phlukg3q9nnqQaIoshwzjKQKimFOE7CKiZcMwL9gDmu7zKv355i4Bj_7JKT114ZpuTF1pqza9jwmY0nvJ_hw8rCFjwdS-MjsPcIj5rGmGOzX_vd9WZjXU_zZMajl_OLxs00EXCaC1GF0132uKOwKL8LOLJIrMkFUSgF4tI3zlpGnY1TyLREJt2d14-_YffLj7CH0tG7xU4OYg8pmD8wtPAW6l49kNwGAYiDgoMRLhcjmy2jviXwU73%26pg%3D4LBJ3H6LL5AVLJCCYFJH4HY2OY%26ch%3DAQEAEAABABR5dWQt5KO1c28nqjfS4ZRCLIn-rS5EtAA."
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1808086579,
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "v%3D3%26mac%3DAQEAEQABABSuxtkaDR-YzfvdNwzchMj2ebbuU57_M2g.%26dt%3D1776550580792"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1808086579,
+    "name": "nfvdid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "BQFmAAEBEDH5mlFXWm1pnUkPhjYzFiNgFRU5mdi1eHrZu3nmqK4gxvXppH4psnk_WgsNq6FKTiTZdNa2H1DPlGsOj8K4B-pYLRCU04FdM9y0LI1sb_r3vFjq-gWBWNFkiPDALJiYPf9e-YbI9aNnd1106_zkESzz"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1808125346,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Sun+Apr+19+2026+02%3A02%3A26+GMT-0700+(Pacific+Daylight+Time)&version=202602.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5fdee256-0ec5-4299-b613-265bab22b527&interactionCount=2&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1776550539098&AwaitingReconsent=false&intType=1&geolocation=TR%3B01"
+  }
+]

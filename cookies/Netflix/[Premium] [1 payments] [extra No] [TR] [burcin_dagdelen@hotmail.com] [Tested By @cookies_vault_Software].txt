@@ -1,0 +1,38 @@
+[
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1817815707,
+    "name": "NetflixId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "v%3D3%26ct%3DBgjHlOvcAxKdA8OmkSBG6LpVN8swuVxY301ErfKaKYfOqyDOWcObnxirBgWSbbH31S1qRDzODgd9ogS-hp14pbRezyf-PEIKOhEYMCM58fPv9Fys_tqVwmy2lpdGA9lFVWPR0_7jSNKrwHiKRvm19cJ0eh_dIi0p8heW_p1cukWM3EjHrGBpezKjvAoTTQX8ScPvoKGD7y4GTBhybV1aOY6JfIkFiJhbAm48jcsw_zPDo29NT15HUg7Hf4kdKYXePR_lapWMHOHYjr0ePnYJjz3AOZU2C-vnb_LvRnEfUfDmjPlBS7lXZZF1UhN2k-kDzQ_-VOBfViSVScPrNoRm4H-6TaMCMleoLz4pggiFQUozzRXqPvhYeNlu9fWcRv9PV2y1mifV1fCEjQxYEyTaRUGHSWpdV3HcqYdN8TYe8nd-NndqxzHw88L16gDdKkjmAqpm99p3PbmForKspXrOU9LkB5KsLiNjiMxSdztgQRyGIwMCEvEbZUfj6zN6hzIkizK2oRSI8TOHFFkje4HoWzcFE5ZB8AG1bL-7a2QhNRJ4Yy3sg2ElGAYiDgoMS5n1JMargXg6qB6j%26pg%3DA3IPG73NRFCBTI4J2RSUA42QSA%26ch%3DAQEAEAABABSsufwiqAH4nTD4gzoLvx_LqUpvXq-Yqw8."
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1817815711,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Sun+Aug+09+2026+15%3A48%3A31+GMT%2B0300+(T%C3%BCrkiye+Standart+Saati)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=d033c93c-74a3-4889-bbde-67847f80be55&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&fclco=&intType=1&crTime=1786279644621&geolocation=TR%3B59&AwaitingReconsent=false"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1817815707,
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "v%3D3%26mac%3DAQEAEQABABRMyfwmaQseb1WEO5SaDfTYlbLRG9CTPv4.%26dt%3D1786279707926"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1817815704,
+    "name": "nfvdid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "BQFmAAEBEIXY_bSD8bfBH3j8KnQsQQFgJlF8TpNNc5e2LaXQ85Ht04-tsr0_iKUKsm6k2LWFASYCkuwQWWi0maBRKj_IvwDlkR3HhHB2O1p1jQpb9xXBNP-6ciOCQMqEeV0R0WxX2XIUQG3ONMQeVAGvTGUfnPpb"
+  }
+]

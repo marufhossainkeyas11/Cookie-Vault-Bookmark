@@ -1,0 +1,38 @@
+[
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1787423501,
+    "name": "nfvdid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "BQFmAAEBEIlGlpvVqSYCb0rgGcO3pqlg-CBGkn4i3aUXjZI1lkpn0cEWfpmhBolgBDBIuZ3Yk7-l-GiEKbBRwZY7xrp4dSQnxgORjA7EAhMlZ8bX6i78GDH3pLk9fGZSJBoi4PbR07DGFS0xhHpHvf6JW4XD1bG2"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1800015675,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Thu+Jan+15+2026+13%3A21%3A15+GMT%2B0100+(Central+European+Standard+Time)&version=202512.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=9213e1ac-e27e-446e-a9c9-14b1222c6db5&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&intType=1&geolocation=DE%3BSH"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1804444891,
+    "name": "NetflixId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "ct%3DBgjHlOvcAxKWBEiZhTVoR1UNQedPdMEV3VQTPm93oEnQm0mZeQXVYe73YFotbJplrSH4B5X5SrykevNOFmFYMv50fcaUgMejPPLKt0xsThEcW5LQTOWYjLvOPPgtsXrBJf9u_5AAIHZZ0Yc5rOA9aAXTEaXNi3OLDi_fI4K7J0_MZwwIlrw0G9_S0G2o0FQ6iiQSRj1ZR9YvFPqd0K6tO48qazKPAEQx4LCAuaaztdANA6fM8obnPBO4ffPkOLqoSbB4e5-eb_gRKNn_cjOK6M_t-vdimCgui5fz7gMU9ovGzn4BE3i66fXIyaDrPheI6KT_GZdUNqAHzS2QuhqDfR4B9lV7VzRqG8sowRxQ1aIQAMeFnbx7NRCIcQzFw1eKZL5y25i-V1oWB1Kqz3dti3ICODltY8xYRZo3gJNoxvpNLoG6C2ECBrF9DJrDau0TNTHGHuhT3xQQ0niCUeeQhGA6C0dXH1if9tfco5OYYU97J-ldXWP2RRSMdDSwhwf2aW-xJlQeoqPXqlFSABZVsORxPVdnoYBAMUuda-_NJz4nsFsq_VauYk0EYrPKqXLSO0-SFfKGTWCsOXCLs0H5dRNP_WmAWgdAuILlzWEZzSvuKKQBPkol-wcdoQ5iUU3TD44RY-zWs4JKxmO8DklBsFt1ujeSb6bK3adVV5kLTuAtquT1dS6AAGKpCEkvcq8Q5CAvaAZiWeFnKuBLrNGBdRgGIg4KDN18K3AFKot5P5GvDg..%26ch%3DAQEAEAABABRme_XD4-8KTOiyQLB9I6GGOQPu6aNIOi8.%26v%3D3%26pg%3D2BIJ2T4VOFG4VOFXDNYZTMZBII"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1804444891,
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "v%3D3%26mac%3DAQEAEQABABQtxQUkxdoN_QQdHfYSagPWseh38ukoEE8.%26dt%3D1772908892415"
+  }
+]
