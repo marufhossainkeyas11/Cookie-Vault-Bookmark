@@ -2,5 +2,6 @@
   "title": "Spotify Cookies",
   "description": "Enjoy music, login Spotify through cookies",
   "image": "./cookies/Spotify/spotify.png",
+  "logo": "./cookies/Spotify/logo.webp",
   "siteLink": "https://spotify.com"
 }
