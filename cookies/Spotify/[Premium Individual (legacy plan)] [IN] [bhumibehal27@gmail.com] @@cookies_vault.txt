@@ -1,0 +1,47 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1791032055,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQD5SXFeJ6NROiVCsR6rxY6-6u_p-votz0JvF3MZTHQWAVvq0NzG2HiEFhBIQffeki8PvY_FSE83UtU1Nma6mPv_4cOrP0dGyXlcbgHGLRvWg9Q7osgFYZRg1eILTW2DA_6JBDnUN95irnJYkMhwX1gSjEtHBGG-ifTrJRtEqMF71nWbSI-M0uOTrupOdnBEgp-vQAXjLtiOUsSxR_Q"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1791032055,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "fa40f9f9-2fab-467f-8c2a-c77921c08ac1"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1791032060,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "f0b9ad12-8462-4ace-a9d9-3f4b356ca607"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_last_utm",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "%7B%22utm_campaign%22%3A%22your_account%22%2C%22utm_medium%22%3A%22menu%22%2C%22utm_source%22%3A%22spotify%22%7D"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_gaid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0088fc302853b11632c690d56a02f062eba4eb683d82e0cea332a8"
+  }
+]

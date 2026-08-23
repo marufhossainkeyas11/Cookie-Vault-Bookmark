@@ -1,0 +1,65 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_landing",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fopen.spotify.com%2F"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_landingref",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fwww.google.com%2F"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_new",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "1"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1792184502,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQCPZqwd4KOMeNCJSZ0Mhoz_AdxDKs-Ji5AUQGdLPdX2c5I5EGQUWKC46vDNU8CZCxZv00zCFLG5VG3TvD3UHfna8YedKy0v3XwmVCIOxHE4jANLL61ctPUeuaoQbeUNd856-XJpO3E-Kl41THX_82v5dYQpwj882o-PQwnms8GmCAuRu_A9iYOagUEFXpT4aVg-Z6W6aQK3eWAuGys"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_gaid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0088fc9a670d6ed60fd7e7723f7a0ec0e89c12fa5bdf7c10c81375"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1792184502,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "fc01baa8-126d-43f2-a0ce-475899307432"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1792184503,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "be7b8089-c605-4eae-bd9e-2c7ae44d4cda"
+  }
+]

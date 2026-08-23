@@ -1,0 +1,47 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1795295906,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQDq_XLTeQkNbBNG438MLxZuFwSWfIrk4Yq9zQaQEUlAM2RuW5s38bEyhEtVAB68Y4m6YbxR889AVxXpu7BlLjg1jHXQZisAWX-1dczSx6lZX_BEBXggBGEFX8cl0447nfMqX_pmwOc-SdmUhCc1n9QlvUbo5ON5TKoXroVALLB96gEdepO94HoINTuygH_0m5335pPYcbZvC6hYJA"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1795295906,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "be7d9778-d74c-42c6-8746-9e97f921b6dd"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_last_utm",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "%7B%22utm_medium%22%3A%22share-link%22%2C%22utm_source%22%3A%22share-options-sheet%22%7D"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_landing",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fopen.spotify.com%2F"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1797521403,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "84d1e433-8746-4325-8654-e1617493ec18"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1810727904,
+    "name": "OptanonAlertBoxClosed",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "2026-05-19T11:58:24.706Z"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1810727900,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQBrHplwDPXvf2LdeWfhGkcPClOwV8hdqHcQbX3KcY3ZMgT5bh9EDGCs6UR9jl2wmS-E9pnkOjH-E4dwBI-qSt5gXrCeox2M2ak74wkfaZXztlt0_itW7nnBMRj5mlVj7nJMntqb_kzyGjFj3MB_dfVrjyZVKdIOn2oyifsU816D72QicYDKq7QoS2z3d8fbrg-yF4cWgpT3JIzXHvg"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1810727900,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "8e24b9f3-775d-4a94-946b-2283354e5673"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_landing",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F2R9yJX5XPfV6OmOaMCOKfk"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1815917704,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Sat+Jul+18+2026+21%3A35%3A04+GMT%2B0800+(China+Standard+Time)&version=202601.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=s00%3A1%2Cf00%3A1%2Cm00%3A1%2Ct00%3A1%2Ci00%3A1%2Cf11%3A1%2Cm02%3A1%2Ct02%3A1%2Cm03%3A1%2CID01%3A1&geolocation=PH%3B10&AwaitingReconsent=false"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1789565702,
+    "name": "sp_gaid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0088fcda6cd9407183a3aa91cabaf2d3bdd57f9fe8e0e00b8ed159"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1815917702,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0777d70a-90b4-490d-8f75-d4efba4b7f4e"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818941966,
+    "name": "_ga",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.2.1667668013.1779191873"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818941966,
+    "name": "_ga_BMC5VGR8YS",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.2.s1784381705$o18$g1$t1784381966$j60$l0$h0"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "_gid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.2.1954833586.1784351224"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818946817,
+    "name": "_ga_ZWG1NSHWD8",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1784386817$o27$g0$t1784386817$j60$l0$h0"
+  }
+]

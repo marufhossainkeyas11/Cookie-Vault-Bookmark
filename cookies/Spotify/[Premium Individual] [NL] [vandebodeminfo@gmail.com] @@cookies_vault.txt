@@ -1,0 +1,29 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802202759,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "ba5ae9a6-a765-4e1c-beb9-b60ddf037e8e"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802202905,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQDAUg5CV60A9X9HtNj4abgRU1XzpOvvG35baW3K5MUnZ65EMU1r-LQQpsTwCYeLrD1pbdmDOEOo8oPQuvbKn7vVajAnNBpNjU7y7-Jlhp3qoMxczVWA1SdlMpCxQoqSeoNYltqLb48GNcFn4xYL3yrs8EEHtdfIrc7OlOlVrxElQxZLUK_rRccvbs5jUVoZwqrYl0Bq3imtFSPC0Q"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802202905,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "7cecf955-f84d-4d27-93d0-9e602164b5ea"
+  }
+]

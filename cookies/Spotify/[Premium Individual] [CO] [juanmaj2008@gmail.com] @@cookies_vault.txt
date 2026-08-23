@@ -1,0 +1,209 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802574621,
+    "name": "_cs_c",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "0"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802625022,
+    "name": "_sctr",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1%7C1768366800000"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802971046,
+    "name": "sp_m",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "co-es"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802625020,
+    "name": "_scid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "ytevol08OaxXXsx-cxFTDsPsayUX5iAn"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802574621,
+    "name": "_cs_id",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "84aeca61-24b8-abe3-9b0b-e50d032387d4.1768410621.1.1768411053.1768410621.1739197584.1802574621060.1.x"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802971061,
+    "name": "_ga_S35RN5WNT2",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1768410621$o1$g1$t1768411061$j46$l0$h0"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802488657,
+    "name": "_hp5_let.4043975597",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "1768411057753"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802488653,
+    "name": "_hp5_event_props.4043975597",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "%7B%22loggedIn%22%3Afalse%2C%22market%22%3A%22co%22%2C%22language%22%3A%22es%22%2C%22TrialEligibility%22%3Afalse%7D"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1799947053,
+    "name": "sp_adid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "27249150-5ecf-46ca-bb2f-a9b7c6edc75b"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802625453,
+    "name": "_scid_r",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1Vevol08OaxXXsx-cxFTDsPsayUX5iAnPglgTw"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1802488653,
+    "name": "_hp5_meta.4043975597",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "%7B%22userId%22%3A%221217735850146384%22%2C%22sessionId%22%3A%224929918206047941%22%2C%22sessionProperties%22%3A%7B%22time%22%3A1768410621386%2C%22id%22%3A%224929918206047941%22%2C%22utm%22%3A%7B%22source%22%3A%22%22%2C%22medium%22%3A%22%22%2C%22term%22%3A%22%22%2C%22content%22%3A%22%22%2C%22campaign%22%3A%22%22%7D%2C%22initial_pageview_info%22%3A%7B%22time%22%3A1768410621386%2C%22id%22%3A%223956143284610652%22%2C%22title%22%3A%22Descargar%20para%20Windows%20-%20Spotify%22%2C%22url%22%3A%7B%22domain%22%3A%22www.spotify.com%22%2C%22path%22%3A%22%2Fes%2Fdownload%2Fwindows%2F%22%2C%22query%22%3A%22%22%2C%22hash%22%3A%22%22%7D%7D%2C%22search_keyword%22%3A%22%22%2C%22referrer%22%3A%22https%3A%2F%2Fwww.youtube.com%2F%22%7D%7D"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1810930788,
+    "name": "OptanonAlertBoxClosed",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "2026-05-21T20:19:48.589Z"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1810930796,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQCFfOITmQ_c6L4_4xiiOAvVAodVIzSBFsMXVYbfMgbit8XLdg2qgtnTqLPxKTal0xTqmLeaTEHUdwAxhK23dR-_IVtIoNR7HJJvArETV37tu-XW5mUVkOwiEscEYE2dN70TtXpNQTu9rNoi0SVHF4jlvyJVtWDj1U90AKygptZ4PJjUdKNO51v5hpJblsNfEZHLPT6OQOqxwfXGDXHvLHMxe4EyTB2GhiSyZqmYX8RXsm7NdJ98Kazv8o5CkSR4OWqvrRZIEQFhLWI"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1789557644,
+    "name": "sp_gaid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0088fc2a6575581982f4a8772fee2b7bed175e55d58ca5a3332362"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1810930796,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "c24e4c78-ca2d-4e59-8900-fcc24b84015f"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1789557644,
+    "name": "sp_landing",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fopen.spotify.com%2Fintl-es"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1789557644,
+    "name": "sp_landingref",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fwww.google.com%2F"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1812065796,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "9c6e747c-2e22-4e93-a5c2-b4b04a635140"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1812065800,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Wed+Jun+03+2026+18%3A36%3A40+GMT-0500+(hora+est%C3%A1ndar+de+Colombia)&version=202601.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=s00%3A1%2Cf00%3A1%2Cm00%3A1%2Ct00%3A1%2Ci00%3A1%2Cf11%3A1%2Cm03%3A1%2CID01%3A1%2Cm02%3A1%2Ct02%3A1&AwaitingReconsent=false&geolocation=CO%3BMAG"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1815089855,
+    "name": "_ga_BMC5VGR8YS",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.2.s1780529801$o2$g1$t1780529855$j6$l0$h0"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1789557644,
+    "name": "_gid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.2.1916647143.1780529801"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1815089855,
+    "name": "_ga",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.2.191232962.1768410621"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1815092445,
+    "name": "_ga_ZWG1NSHWD8",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1780532445$o4$g0$t1780532445$j60$l0$h0"
+  }
+]

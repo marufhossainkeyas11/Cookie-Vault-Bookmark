@@ -1,0 +1,227 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1796311777,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "f0e951d7-3e9c-4758-96a6-8c54e7c1a2aa"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1796311777,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQCqLg1IcsmnK3kUmZ6w6Lu77WAiFnFKfo8PvLiHqeegUB-CBOVSWpZFREY6DAMaRFwb0jSOPdrmKDEt6IaEK2cYnmecp0bVCZ0FafXWIYlTdpRuA7aSeedSKtKkwGSH85eCsz_4gSxKZLEFfpg59nVVkMXjQ1PEIxAsR55WUsgr2AAlrnjwPwJ26Hhf3h7v2ff3OIjWJq6hwVcpx1U"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1804895111,
+    "name": "_hp5_event_props.4043975597",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "%7B%7D"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1804895111,
+    "name": "_hp5_meta.4043975597",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "%7B%22userId%22%3A%225906834435937576%22%2C%22sessionId%22%3A%222726827533759922%22%2C%22sessionProperties%22%3A%7B%22time%22%3A1770817511943%2C%22id%22%3A%222726827533759922%22%2C%22initial_pageview_info%22%3A%7B%22time%22%3A1770817511943%2C%22id%22%3A%226103615195866776%22%2C%22title%22%3A%22100%20Maiores%20M%C3%BAsicas%20Brasileiras%20Todos%20os%20Tempos%20-%20Rolling%20Stones%20-%20playlist%20by%20theoaga%20%7C%20Spotify%22%2C%22url%22%3A%7B%22domain%22%3A%22open.spotify.com%22%2C%22path%22%3A%22%2Fplaylist%2F2VZsbWijnudaTcUfniYPE0%22%2C%22query%22%3A%22%22%2C%22hash%22%3A%22%22%7D%7D%2C%22search_keyword%22%3A%22%22%2C%22referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%2C%22utm%22%3A%7B%22source%22%3A%22%22%2C%22medium%22%3A%22%22%2C%22term%22%3A%22%22%2C%22content%22%3A%22%22%2C%22campaign%22%3A%22%22%7D%7D%7D"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1804895111,
+    "name": "_hp5_let.4043975597",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "1770817511943"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1806028671,
+    "name": "sp_adid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "084937b5-10b5-401c-8897-1818e2eb720d"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1788807101,
+    "name": "sp_gaid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0088fc4036a490d182ede3952a8b9e9ba9be2a7cb6c1207242edb6"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1816806022,
+    "name": "sp_t",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "731579ff-b96c-4a35-bdc4-06db5f5cbf23"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818097530,
+    "name": "AMP_MKTG_5048e0c51e",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "JTdCJTIycmVmZXJyZXIlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnd3dy5nb29nbGUuY29tJTJGJTIyJTJDJTIycmVmZXJyaW5nX2RvbWFpbiUyMiUzQSUyMnd3dy5nb29nbGUuY29tJTIyJTdE"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1820689529,
+    "name": "_scid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "p1DJKAhn1c08OWwDWTZ4jK5lha8M8q9g"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_landingref",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fwww.google.com%2F"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_landing",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "https%3A%2F%2Fwww.spotify.com%2Fbr-en%2Ffamily%2F"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1820257560,
+    "name": "_tt_enable_cookie",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_m",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "br-pt"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1820257563,
+    "name": "ttcsid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1786561547413::VtExIGXDYpTuF32eny-Q.1.1786561563029.0::1.15602.13289::0.0.0.0::0.0.0"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1820257560,
+    "name": "_ttp",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "01KZVNVK4KNR6C4BY8C7R69GM1_.tt.1"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818097569,
+    "name": "OptanonAlertBoxClosed",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "2026-08-12T19:06:09.412Z"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1820257563,
+    "name": "ttcsid_C4LTLTT1KC6QQ9D157OG",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1786561547413::5DEC1yDWj_ESRLp0KdjW.1.1786561563029.1"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818097569,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Wed+Aug+12+2026+16%3A06%3A09+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202601.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=s00%3A1%2Cf00%3A1%2Cm00%3A1%2Ct00%3A1%2Ci00%3A1%2Cf02%3A1%2Cf11%3A1%2Cm02%3A1%2Ct02%3A1%2Cm03%3A1%2CID01%3A1&AwaitingReconsent=false"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1794337529,
+    "name": "_gcl_au",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1.1.1738408260.1786561529"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1821121568,
+    "name": "_ga",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.1.1807503358.1786561529"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1820689569,
+    "name": "_scid_r",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "s9DJKAhn1c08OWwDWTZ4jK5lha8M8q9gFC6Fzg"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1794337587,
+    "name": "_fbp",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "fb.1.1786561547193.851114136913600419"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1818097587,
+    "name": "AMP_5048e0c51e",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjJiZWYzNGE2Ny1lMTYzLTQ5NGMtODIxMi03ZDdhMDBkZTdkYTklMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjIwMDg4ZmM0MDM2YTQ5MGQxODJlZGUzOTUyYThiOWU5YmE5YmUyYTdjYjZjMTIwNzI0MmVkYjYlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzg2NTYxNTMwMDU0JTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc4NjU2MTU4NzY0MiUyQyUyMmxhc3RFdmVudElkJTIyJTNBMjUlMkMlMjJwYWdlQ291bnRlciUyMiUzQTEyJTJDJTIyY29va2llRG9tYWluJTIyJTNBJTIyLnNwb3RpZnkuY29tJTIyJTdE"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1821121647,
+    "name": "_ga_S35RN5WNT2",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1786561529$o1$g1$t1786561647$j60$l0$h0"
+  }
+]

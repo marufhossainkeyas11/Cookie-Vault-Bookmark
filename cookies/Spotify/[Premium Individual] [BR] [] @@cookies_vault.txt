@@ -1,0 +1,38 @@
+[
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1812632613,
+    "name": "sp_dc",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "AQCmwXgbWjvcR3a_n7-5z0x_D97BCd2ldoCMfr8NjRM7xpikfDBAcrnJkZpQB9818Ar_oFX2glURdYPY3R7AzuyB4Uc8UERVtjo1fzCdj8sAt3eI35SO0K8CXs4NOB8PxlzO9lW3qf9SAfKRNIVpHh85ns_2YwpQL96-m42w-3SJZNIkOLmqiAfkpzk10Di96TtoMxOsNjHAWPxVvvk"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1790006728,
+    "name": "sp_gaid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0088fc269c5721a02f6da05b7641498529cfb307bf947ba0d4969f"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1812632613,
+    "name": "sp_key",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "037b2e4f-5adb-49dc-9859-a9f12229ec45"
+  },
+  {
+    "domain": ".spotify.com",
+    "expirationDate": 1812635016,
+    "name": "OptanonAlertBoxClosed",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "2026-06-10T13:43:36.803Z"
+  }
+]
