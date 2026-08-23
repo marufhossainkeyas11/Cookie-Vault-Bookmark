@@ -1,0 +1,34 @@
+[
+  {
+    "domain": ".netflix.com",
+    "name": "NetflixId",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "ct=BgjHlOvcAxKNBKO8mUu5D-PSsjFsZp7N4iyt0vnuzfwIWdd42bXCtmtsk3Db013ndBiUQ5D_3izxw-WA1t8VmnPU9gbVNmddieIav1J55eNhr79GN-Lp4pPpiG_ZTfo06FO8uVLGWwHrRb6P237XDkewlbAT1CTz2fq-9HglLQJjJRKBhNEIAzLbNrW1wOFmk-zxHy-d_9hafOZcJ5k9vO9eq4csBBK3VB7UNzRGP93rYu15durUZwQs2DGZaADLRVVxi4QDkWXcS1aoiIPE0-6GNIaTKzKnPgIgzou2X4C7ocaUNjhHQQvPlaPI-7blSmbvLYM-RF1Pq2o319Ha2eCkTmIyL3YCQpz408rKIstgRywfLKxLUJ_SxnCA7mKM03Sf-Xp3IxmkAGlnCbNcPCeV776p6n5KkQoZRJQBILnYe8HXCGYonldJhq2T6qz-OEgpGu7DAmlEQNRLbWL9U19sqW0C8NBqsICURdyaKPrd46PN8P6ouDPBt6MJcvIgLv0dmY6p01epwPjhhJ25g2j4XTtKB8BPZB7gO5hjgFljOzaqkM_sZavvrqrfHrIuGi4vC7OrFNsJ7kDFyjUweGv8-SCavQaQTK5YyV2czzSw7ZS9mmrQIVcDAQ_hGtzrG4BHgkTuKLlDpx654s7uEo-Z8PDbsx4dkuLKy4o3qTlUaP6pJlYuoKm84ybmxJOwVX-PDuB1NhgGIg4KDKGTI3h11pp1Ji_xrg..&ch=AQEAEAABABQNpRmKu1swl25RA0jMtIuci7pfXZqT4Ak.&v=3&pg=HXQLDXZOWJAVBBANKQRUJPQ6JI"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "nfvdid",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "BQFmAAEBEMbnADiIoc2lXGChKgcAP_JgygYcb6A7u9KZuEFhSVTrhS01IiZucPQ9SLK3mRDVaf4rgV2uefswFcLSrrKhKPtnp0dXDfUkRHoh-v5Rwe7uASOeSUcF9f_fHHTmTbZVwddBVMIy-BEX6U63WwLtd6yI"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "isGpcEnabled=0&datestamp=Tue+Jun+02+2026+23:05:49+GMT-0400+(Eastern+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e64ce32c-c99e-4884-9988-b1ddac00d7d9&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001:1,C0002:1,C0003:1,C0004:1&AwaitingReconsent=false&intType=3&geolocation=CA;ON&prevHadToken=0&isDntEnabled=0"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "v=3&mac=AQEAEQABABSEiuGmE-2exN-TXh2Ojju_LIByOYXaFZs.&dt=1780455947475"
+  }
+]

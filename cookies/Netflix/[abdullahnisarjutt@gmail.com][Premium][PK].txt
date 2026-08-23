@@ -1,0 +1,82 @@
+[
+  {
+    "domain": ".netflix.com",
+    "name": "nfvdid",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "BQFmAAEBELFl4ixl19m00ztnSPaXxgBgIFTQdczbPW0bYoaX4Mij9vGnE87xeZ9YnYj3463QAX7WZJeQotFgo1G9PSaFJ3X5916vC1bIaEalE24qfbyILfO5LthMFOvYTEPtt_slnaxtp38L3LmOTMN2xmPSDCAI"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "NetflixId",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "v%3D3%26ct%3DBgjHlOvcAxKYAy8vfypE7ymR63r3_0UGbUBmRpdBBIzwe4y4mzNiGyE4IWxpF_wkiV-TYkRsfiiJWv_diHb4Q5NPlFE64cvIxOQov30ME7RSeiF_d09SalrGMgETlpBzyMsxxE8deM-GDbPNNlLXcVks229wrbBVo7cqe8udNz_oErYKdyvQ_WIQ_u6rDWHp4Jdhbchp3dYZNdExqJrwMCtG35CH1AAmKN0vRigUF2GBVy-Md0c9hPxD17xXVlvFvrUL0E6ii7ZHXb_XGt5KAbBfsWqIzIOP9FGtYYiUP_ZT28dy-hUEqjS_HYWO6ER48LhEVmKn7yeUHZplTdM4Fx77XcslNCgOsh1908jSEGjjP0VHJUHJj76s3bpnVNNiyvUwct6Mahv5Y7LASKyhBwLci6N3A4mjY4zZ5yCJwvYg7ayzpuYFQ4G2hdG6lqrUFvb-omFgNzUTI2lrFT4nNjO7vBPzvLNpGm5z7zdveU-ZIW_3tmgM5S-vgYHZnD49Q9VEbskSfhiMeSdsAv0WHPe8-PBOVJcA9A1FZqXTEk3fpBgGIg4KDPFU3WZrcUVInIlXEw..%26pg%3DSCNYSRURKZB2DEQWYQV7JRUMJE%26ch%3DAQEAEAABABQbipJlxOcllCgMDYWY1V0CANZxXorqz8Q."
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "OTSessionTracking",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "87b6a5c0-0104-4e96-a291-092c11350111"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "isGpcEnabled=0&datestamp=Sun+Jun+28+2026+08%3A47%3A13+GMT-0700+(Pacific+Daylight+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=aea1ae6b-9918-48f7-8090-add88d7489ff&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1782310842444&AwaitingReconsent=false"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "v%3D3%26mac%3DAQEAEQABABSDwG_JQ7IBYnhPFqHROCQq-oddMCctTeo.%26dt%3D1782661628098"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "gsid",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "fd637c58-ab56-4679-bd43-7d203d3b124e"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "netflix-sans-bold-3-loaded",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "true"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "netflix-sans-normal-3-loaded",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "true"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "pas",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "profilesNewSession",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "0"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "domain": ".netflix.com",
+    "name": "nfvdid",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "BQFmAAEBEEPr8m2xZgunnOts9hSKY_1g6bxYHlk5qoRGyn3ls6gMA9PFnI8y02iRbygKD2sAHk6UpOJkyDbMgVni9i7cGNDXXOUCE0xzf766srhFKVnIa0eInGIKr0ZJJ5EQgyHC4tx50GCDMc5UPRnvNGHY5TIl"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "NetflixId",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "ct=BgjHlOvcAxKMBK2W86aSXTevDQmGO7vef9BesPGQc9vGX39LbHkm-3Jp0hRted_6QXnRe8INDlCzJafWHQ6gM6CJViQvGgniens_pwrAr-kEe6fOtpGtbYV0OW3WughhWAWuzaTXejcLo1b-ejJEqdDNJOl1368Bw7v8bVwus48vGBswP94kU2GLxX7EuMLoRjKB1pKG-k0urYxJHj_Le9T7Y2bOTqGmIsSeDb_T7yeqw1SbSLzMXFtmmscU1EkOd9LJDMiV-Eee8mY1A-mrkPGTb2ZXYnkgzLgxPYjbJu40D5wab9oZadAKArGaDl6s9p9iXUqqke4ixhSVwdEKkpBroR6V4hUWnPVZ_KRkxPvvyozrji7kZb6Gl0Rv4maW1J54viVhRJ3iHHTN-zmZ1yp6VZGGuPGUgz0e8xTWgDf54RCJX9Y1bLy56TDYyjopKX_Flyh1R7csekTBbDq9mxCuNraDlYPqHVt47CX27A-mTSopgkMROJAJhwYY-aGyBvcreuBrAb-28UI14x7TAFetkp6Pgw6uH3puSeSxwCm_X2uYL2Xv-dUP3WF_pMNPVJlUuTAPl9jdIhlHPez5h06tSqMXwXFZcVm4bQJCz3Y9wuLOdnsiWBD2VP9zJSE90Mwa4mWf11pEWZeii0ybviwBTzaetKsU27y_TZBTM_TA6jhkxMQABhKad9_0kevqhwqJA0sUGAYiDgoMpWa2DvmDp8BJydkg&ch=AQEAEAABABRVmK51P1iTlFrri9f_gomtvNakEoQbRok.&v=3&pg=VKU5U3ONBND7RORFR3YEQFOCMI"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "v=3&mac=AQEAEQABABRD8WM0H3Z4Dt-zqGdbdpQqpSwdDpV_d1A.&dt=1778365132970"
+  },
+  {
+    "domain": ".netflix.com",
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": true,
+    "session": true,
+    "value": "isGpcEnabled=0&datestamp=Sun+May+10+2026+01:19:23+GMT+0300+(Türkiye+Standart+Saati)&version=202604.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=19aec117-dfe3-499e-9d78-b8049827ca5c&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001:1,C0002:1,C0003:0,C0004:0&AwaitingReconsent=false&intType=2&geolocation=TR;07&prevHadToken=0&isDntEnabled=0"
+  }
+]
