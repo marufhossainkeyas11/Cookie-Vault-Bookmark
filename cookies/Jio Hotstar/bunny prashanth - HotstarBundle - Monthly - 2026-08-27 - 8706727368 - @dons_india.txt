@@ -1,0 +1,182 @@
+[
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1796295679,
+    "name": "userCountryCode",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "in"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1806141419,
+    "name": "_twpid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "tw.1772445419733.94934689761612173"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1820160748,
+    "name": "SELECTED__LANGUAGE",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "eng"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1817136748,
+    "name": "_abck",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "0B61FE31749CB76E81EC1AC76A32F945~-1~YAAQDTYauKc+ro+fAQAAvjEZvhAJyv/e03o1IKYyLiDUuq7YV/7i4/GdjaVtSUoHsxa3JCFj3/R5/iwS6V2g1Wq1MIoBk1qlQJD3VdgX3o4yJqG1Z3VP3Pt2fym6KQZ27sZ/z9G32BEbNRsHaBMibodjYJceRC5Isb9gZMR635VR76SAq6+Nw5YH75VIzpzORZFFL7SiylnwOcTX+VOQz9h0Lfi+m850X6cLTmxrPX4D7xEDB7UnwKJ6HrFcrbT7II0fkt9fAYAD4edlxD5xT+CZecn5DX+10yQ7Rxpdp4haOqDt83O08OCv+u6euxMJfZtFdzvb8r44mRt7wLFmCfQPvxyZ+EeL6XOHtuj+palx2NScgmrABfhneKuTdvj4HT7WMdkfh5CjK1GiqaD2vRcmyi4DQ7W2/qAHEkSMWk89f80YBh0cFuCKtIdgSWXhj3GlPFMVr4jLsfeUlqWThgOG+Hs7a9Zo07RpF+mHtzEkYGFVTRwVoHa5kE/01LJS~-1~-1~-1~-1~-1"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1820160750,
+    "name": "_ga",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.1.723888731.1761213653"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1820160757,
+    "name": "_ga_2PV8LWETCX",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1785600750$o89$g1$t1785600757$j53$l0$h0"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1820160757,
+    "name": "_ga_EPJ8DYH89Z",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1785600749$o89$g1$t1785600757$j52$l0$h0"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1820160757,
+    "name": "_ga_QV5FD29XJC",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1785600749$o89$g1$t1785600757$j52$l0$h0"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1792688686,
+    "name": "_gcl_au",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1.1.1416786269.1784912686"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1819296750,
+    "name": "_uetvid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "018d6cf0b63c11f0ab87cb58c8a9f4b8"
+  },
+  {
+    "domain": "hspx.hotstar.com",
+    "expirationDate": 1820160749,
+    "name": "deviceId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "6d004c-4b2687-6429ba-2dd34a"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1820160756,
+    "name": "deviceId",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "6d004c-4b2687-6429ba-2dd34a"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1820160749,
+    "name": "loc",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "EO%2B1uNMGKAMirgJuVs%2FAI63CLYRhrbHGvpPHMBZ%2FXvhKIAxtcZesb4%2F62W5sIOZq3ZTM3YxQHY1d4U6%2BuzSDkgP4%2BClgmKmwF52b1f%2Bd2XPluEu2Nn2L8DM2raxmpfid%2BVx%2F8t8RZQUTElH7ha8ZOLKbx%2FvKFxb0VYk%2B0fQq7S%2FSaouBIKJbXqNEcgBiX85fhJnPVAOq1sQtTM2Pv98hNu%2BBrAwsMBNtkMe%2B5Q%2FYyn1aCb%2B6JZTscp7oA5kzz6z%2FtzqpKIpvQHX1xxDA8dzRF%2FM9lgMcGh4mSaDkfAXWDlHqHcb4jD0yD5AygWrHNUe4oxk26%2F0az1CRXwLexDdQncBL8cRsA4iIQKEhlOMfhO7b8FqO1Czy7p2PHB2ZK4v4Lee5MH4GCuIp%2FPoHeotCHy4ygxVedKWPvQ%3D%3D"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1820160750,
+    "name": "_ga_VJTFGHZ5NH",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.2.s1785600750$o65$g0$t1785600750$j60$l0$h0"
+  },
+  {
+    "domain": "hspx.hotstar.com",
+    "expirationDate": 1820160749,
+    "name": "userPID",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "58242144211c4a618ffa54e27fc519ec"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1817136752,
+    "name": "userHID",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "bd55a5edb50c48b888f995bd87260e18"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1820160749,
+    "name": "x-hs-setproxystate-ud",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "loc"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1817136752,
+    "name": "userPID",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "58242144211c4a618ffa54e27fc519ec"
+  },
+  {
+    "domain": ".hotstar.com",
+    "expirationDate": 1793377288,
+    "name": "_fbp",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "fb.1.1761213654179.347100566158588595"
+  },
+  {
+    "domain": "www.hotstar.com",
+    "expirationDate": 1817136752,
+    "name": "userUP",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJoSWRcIjpcImJkNTVhNWVkYjUwYzQ4Yjg4OGY5OTViZDg3MjYwZTE4XCIsXCJwSWRcIjpcIjU4MjQyMTQ0MjExYzRhNjE4ZmZhNTRlMjdmYzUxOWVjXCIsXCJkd0hpZFwiOlwiNmRlNzE0ZjYyNjNmOGU5NzQyMmM1M2Y3ZGRiN2YzYzg5ZDlmYjE3MDYwNTBmOWFjYzVlZDkzZTMwMDY5NzUwZFwiLFwiZHdQaWRcIjpcIjFmN2Q0NjExYzVlNTczNjg0YjY0ZjE4OTcxNjZmMTc4ZjllMmIxNGEyYmMxZGVjZTUwYWViYWM4NzkxMWM0YWZcIixcIm9sZEhpZFwiOlwiYmQ1NWE1ZWRiNTBjNDhiODg4Zjk5NWJkODcyNjBlMThcIixcIm9sZFBpZFwiOlwiNTgyNDIxNDQyMTFjNGE2MThmZmE1NGUyN2ZjNTE5ZWNcIixcImlzUGlpVXNlck1pZ3JhdGVkXCI6ZmFsc2UsXCJuYW1lXCI6XCJidW5ueSBwcmFzaGFudGhcIixcInBob25lXCI6XCI4MTg3ODI4MTc2XCIsXCJpcFwiOlwiMTA2LjE5Mi40MC4xMjdcIixcImNvdW50cnlDb2RlXCI6XCJpblwiLFwiY3VzdG9tZXJUeXBlXCI6XCJudVwiLFwidHlwZVwiOlwicGhvbmVcIixcImlzRW1haWxWZXJpZmllZFwiOmZhbHNlLFwiaXNQaG9uZVZlcmlmaWVkXCI6dHJ1ZSxcImRldmljZUlkXCI6XCI2ZDAwNGMtNGIyNjg3LTY0MjliYS0yZGQzNGFcIixcInByb2ZpbGVcIjpcIkFEVUxUXCIsXCJ2ZXJzaW9uXCI6XCJ2MlwiLFwic3Vic2NyaXB0aW9uc1wiOntcImluXCI6e1wiSG90c3RhckJ1bmRsZVwiOntcInN0YXR1c1wiOlwiU1wiLFwiZXhwaXJ5XCI6XCIyMDI2LTA4LTI3VDEwOjI5OjU5LjAwMFpcIixcInNob3dBZHNcIjpcIjFcIixcImNudFwiOlwiMVwifX19LFwiZW50XCI6XCJDclFCQ2dVS0F3b0JCUktxQVJJSFlXNWtjbTlwWkJJRGFXOXpFZ2xoYm1SeWIybGtkSFlTQm1acGNtVjBkaElIWVhCd2JHVjBkaElFY205cmRSSURkMlZpRWdSdGQyVmlFZ2QwYVhwbGJuUjJFZ1YzWldKdmN4SUdhbWx2YzNSaUVncGphSEp2YldWallYTjBFZ1IwZG05ekVnUndZM1IyRWdOcWFXOFNCbXRsY0d4bGNob0NjMlFhQW1oa0dnTm1hR1FpQTNOa2Npb0djM1JsY21WdktnaGtiMnhpZVRVdU1Tb0taRzlzWW5sQmRHMXZjMWdCQ2cwU0N3aGtPQVpBQVZDNENGZ0JDdTBCQ2dVS0F3b0JBQkxqQVJJSFlXNWtjbTlwWkJJRGFXOXpFZ2xoYm1SeWIybGtkSFlTQm1acGNtVjBkaElIWVhCd2JHVjBkaElFY205cmRSSURkMlZpRWdSdGQyVmlFZ2QwYVhwbGJuUjJFZ1YzWldKdmN4SUdhbWx2YzNSaUVncGphSEp2YldWallYTjBFZ1IwZG05ekVnUndZM1IyRWdOcWFXOFNCbXRsY0d4bGNoSUhhbWx2TFd4NVpoSUVlR0p2ZUJJTGNHeGhlWE4wWVhScGIyNFNER3BwYjNCb2IyNWxiR2wwWlJJTlptVmhkSFZ5WlcxdlltbHNaUm9DYzJRYUFtaGtHZ05tYUdRaUEzTmtjaW9HYzNSbGNtVnZLZ2hrYjJ4aWVUVXVNU29LWkc5c1lubEJkRzF2YzFnQkNob0tFZ29BQ2c0U0JUVTFPRE0yRWdVMk5EQTBPUklFT0dSWUFSSitDQUVRMk9pVGxvUTBHa1VLR2twcGJ5NUpUaTVDZFc1a2JHVXVUVzl1ZEdoc2VTNUdWRlJJRWcxSWIzUnpkR0Z5UW5WdVpHeGxHZ05LYVc4ZzBKM2NpL016S05qb2s1YUVOREFHT0FGQTlCY3dBVG9mQ2h0SWIzUnpkR0Z5VUhKbGJXbDFiUzVKVGk1TmIyNTBhQzR5T1RrUUFVSUhLSmlEOG9Uek0wZ0JcIixcImlzc3VlZEF0XCI6MTc4NTYwMDc1NDU4MyxcIm1hdHVyaXR5TGV2ZWxcIjpcIkFcIixcImRwaWRcIjpcIjU4MjQyMTQ0MjExYzRhNjE4ZmZhNTRlMjdmYzUxOWVjXCIsXCJzdFwiOjEsXCJkYXRhXCI6XCJDZ1FJQURvQUNoSUlBQ0lPZ0FFU2lBRUJrQUc3OGRYenhpNEtMZ2dBUWlvS0tHRmhObU0xWmpoaE0ySTVZak0wWW1Oa1lqWmlObUZqTkdVMk9ESTBNalkzWVRjMk9WOU5ha1U9XCJ9IiwiaXNzIjoiVU0iLCJleHAiOjE3ODU2ODcxNTQsImp0aSI6IjVkYjNmYjIyNDAzZjRkNGE5OTYxNDNjYTFlMzE3MmIxIiwiaWF0IjoxNzg1NjAwNzU0LCJhcHBJZCI6IiIsInRlbmFudCI6IiIsInZlcnNpb24iOiIxXzAiLCJhdWQiOiJ1bV9hY2Nlc3MifQ.za7KRrJ3SdsxxUaconElP7XMBwL1AyM-zGGXnRGXiQY"
+  }
+]
