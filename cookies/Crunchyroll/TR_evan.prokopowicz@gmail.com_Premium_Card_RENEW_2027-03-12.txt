@@ -2,6 +2,7 @@
   {
     "domain": ".www.crunchyroll.com",
     "expirationDate": 1801144395,
+    "httpOnly": false,
     "name": "OptanonAlertBoxClosed",
     "path": "/",
     "secure": false,
@@ -11,6 +12,7 @@
   {
     "domain": ".sso.crunchyroll.com",
     "expirationDate": 1801144411,
+    "httpOnly": false,
     "name": "OptanonAlertBoxClosed",
     "path": "/",
     "secure": false,
@@ -20,6 +22,7 @@
   {
     "domain": ".sso.crunchyroll.com",
     "expirationDate": 1801144411,
+    "httpOnly": false,
     "name": "OptanonConsent",
     "path": "/",
     "secure": false,
@@ -29,6 +32,7 @@
   {
     "domain": "www.crunchyroll.com",
     "expirationDate": 1801144408,
+    "httpOnly": false,
     "name": "anonymous_antiphishing_warning",
     "path": "/",
     "secure": false,
@@ -38,6 +42,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801144406,
+    "httpOnly": false,
     "name": "cf_clearance",
     "path": "/",
     "secure": true,
@@ -47,6 +52,7 @@
   {
     "domain": ".www.crunchyroll.com",
     "expirationDate": 1801144426,
+    "httpOnly": false,
     "name": "OptanonConsent",
     "path": "/",
     "secure": false,
@@ -56,6 +62,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801144427,
+    "httpOnly": false,
     "name": "ab.storage.deviceId.80f403d2-1c18-471d-b0ef-243d1d646436",
     "path": "/",
     "secure": false,
@@ -65,6 +72,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801144427,
+    "httpOnly": false,
     "name": "ab.storage.sessionId.80f403d2-1c18-471d-b0ef-243d1d646436",
     "path": "/",
     "secure": false,
@@ -74,6 +82,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801144427,
+    "httpOnly": false,
     "name": "ab.storage.userId.80f403d2-1c18-471d-b0ef-243d1d646436",
     "path": "/",
     "secure": false,
@@ -83,6 +92,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801144426,
+    "httpOnly": false,
     "name": "c_locale",
     "path": "/",
     "secure": true,
@@ -92,6 +102,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801144425,
+    "httpOnly": false,
     "name": "etp_rt",
     "path": "/",
     "secure": true,
@@ -101,6 +112,7 @@
   {
     "domain": "www.crunchyroll.com",
     "expirationDate": 1801149815,
+    "httpOnly": false,
     "name": "bitmovin_analytics_uuid",
     "path": "/",
     "secure": false,
@@ -110,6 +122,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1785600188,
+    "httpOnly": false,
     "name": "__cf_bm",
     "path": "/",
     "secure": true,
@@ -119,6 +132,7 @@
   {
     "domain": ".crunchyroll.com",
     "expirationDate": 1801150895,
+    "httpOnly": false,
     "name": "device_id",
     "path": "/",
     "secure": true,
@@ -128,6 +142,7 @@
   {
     "domain": "www.crunchyroll.com",
     "expirationDate": 1801150906,
+    "httpOnly": false,
     "name": "_dd_s",
     "path": "/",
     "secure": false,
@@ -137,6 +152,7 @@
   {
     "domain": "www.crunchyroll.com",
     "expirationDate": 1801150950,
+    "httpOnly": false,
     "name": "muxData",
     "path": "/",
     "secure": false,
