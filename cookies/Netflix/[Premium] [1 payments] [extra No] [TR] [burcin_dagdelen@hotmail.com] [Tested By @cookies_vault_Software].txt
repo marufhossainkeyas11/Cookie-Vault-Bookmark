@@ -2,6 +2,7 @@
   {
     "domain": ".netflix.com",
     "expirationDate": 1817815707,
+    "httpOnly": false,
     "name": "NetflixId",
     "path": "/",
     "secure": true,
@@ -11,6 +12,7 @@
   {
     "domain": ".netflix.com",
     "expirationDate": 1817815711,
+    "httpOnly": false,
     "name": "OptanonConsent",
     "path": "/",
     "secure": false,
@@ -20,6 +22,7 @@
   {
     "domain": ".netflix.com",
     "expirationDate": 1817815707,
+    "httpOnly": false,
     "name": "SecureNetflixId",
     "path": "/",
     "secure": true,
@@ -29,6 +32,7 @@
   {
     "domain": ".netflix.com",
     "expirationDate": 1817815704,
+    "httpOnly": false,
     "name": "nfvdid",
     "path": "/",
     "secure": false,
