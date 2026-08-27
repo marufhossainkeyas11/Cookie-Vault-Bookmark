@@ -1,50 +1,252 @@
-# Netscape HTTP Cookie File
-#═════════════════════════════════
-#HBO MAX COOKIES CHECKER
-#SOFTWARE: HBO MAX COOKIES CHECKER BY @cookies_vault SOFTWARE
-#VERSION: V2.0.5
-#TELEGRAM: https://t.me/cookies_vault
-#═════════════════════════════════
-#USERNAME       : Patricia López Baz
-#EMAIL          : patricialopezbaz@gmail.com
-#USER ID        : USERID:bolt:d695d450-2ec6-4947-8d08-c4cd50f91c21
-#PHONE          : N/A
-#EMAIL VERIFIED : N/A
-#CREATED        : N/A
-#COUNTRY        : N/A
-#PLAN           : With Ads
-#PAYMENT METHOD : N/A
-#EXPIRE         : 2026-09-11
-#DAYS LEFT      : 22
-#PROFILES       : 3
-#CHECKED AT     : 2026-08-19 22:12:19
-#==================================================
-
-.hbomax.com	TRUE	/	FALSE	1791497637	transientID	628836b9-c9e7-4eff-95ee-9b5ccb39e38e
-.hbomax.com	TRUE	/	FALSE	1788473657	anonymousConsentElections	MjAyNS0wOS0wM1QyMjoxNDoxN1p8RVN8cHRmd2J8Q1FYTlJWQVFYTlJWQUFjQUJCRU5CNkZnQUFBQUFBQUFBQnBZQUFBQUFBSEJBQVlBRGdCT0FRckNRSWdBRmdBVkFBNEFCNEFFQUFNZ0FhQUE4QUNZQUZJQUtvQWJ3QV9BQ0VBRWNBSm9BWVlBeWdCemdEdUFINkFQOEFrb0JmUUQyZ0pFQVRzQW9jQmJBQzh3R1hBTmpBZ3dCQzhSQUJBTFNLZ0JnQk1BRWNBZTBaQURBQ1lBSTRBOW80QUxBQTRBRHdBMEFDT0FJUUJDc2RBakFBV0FCVUFEZ0FJQUFaQUEwQUI0QUV3QUtRQVZRQTNnQi1BRTBBSndBWVlBeWdCb2dEbkFIY0FQMEFmNEJGZ0NPZ0VsQVBhQWl3QkY0Q1JBRTdBS0hBV3dBdk1CbGdETGdJTUVBQVlBRHdBMEFRcklRRFFBRmdCTUFDcUFHOEFSd0E1d0IzQURfQUw2QWUwQkN3Q0xBSU1FZ0FRQTdnR1dFb0I0QUN3QU9BQThBQ1lBRklBS29BamdEMmdJV0FSWUFpOEJJZ0MyQUY1Z1FZS0FDQUJIQUNjQUhjQWY4QlVnQ3NnSVZnUXZLUUhnQUZnQVZBQTRBQ0FBR1FBTkFBZUFCTUFDa0FGVUFQd0F5Z0JvZ0RuQUg2QVJZQWpvQkpRQzZnSHRBUXNBaThCSWdDZGdGRGdMWUFYbUF5d0Jsd0VHQ3dCZ0FCNEFHUUFWQUJDQUNRQUd3QVJ3QXBBQjNBRkZBS2FBWFlBd2dCbkFEVGdIVkFQYUFnVUJDd0MyQUdQZ05qQWdLQkRBLllBQUFBQUFBQUFBQQ==
-.play.hbomax.com	TRUE	/	FALSE	1803413165	_ga_QCLBQC10R6	deleted
-.hbomax.com	TRUE	/	FALSE	1802891471	usprivacy	1---
-.hbomax.com	TRUE	/	FALSE	1806425236	afUserId	6f1f86cd-ddfc-44f9-a8f8-c51ea8968652-p
-.hbomax.com	TRUE	/	FALSE	1805126835	OptanonAlertBoxClosed	2026-03-15T16:07:15.790Z
-.hbomax.com	TRUE	/	FALSE	1805126835	OptanonConsent	groups%3Dftc%3A1%2Cpfc%3A1%2Ctc%3A1
-.hbomax.com	TRUE	/	FALSE	1805126835	eupubconsent-v2	CQQ-d5AQQ-d5AAcABBENBnFgAPLAAAAAABpYJQMB3CJ8BSFDYSZ1IIskaIUXwRABxkQhAgLBAwABiBKAOIQAkCAAAABANCACAAIAMHBAAAFADIAAAAAAIAgAIAAMIAAQAABIIABAAAAAAAAQCAgAAABAAQAQgmAEAAcAgAAlgAIoAFAAAABCAACBAAAAEAAFAAEAAAAAAAAAAAAIICwABQAAjAAAAAAAABgQAAAAAAAEAAABoQAIAA4ATgD9wIVhIEQACwAKgAcAA8ACAAGQANAAeABMACkAFUAN4AegA_ACEAEcAJoAYYAygBzgDuAH6AP8AkoBfQEiAJ2AUOAtgBeYDLgGxgQYAheKgBABMAEcMgBABMAEcOADQAOAA8ANAAjgCEAP3AhWOgSAALAAqABwAEAAMgAaAA8ACYAFIAKoAYgA3gB6AD8AJoATgAwwBlADRAHOAO4AfoA_wCLAEdAJKAiwBF4CRAE7AKHAWwAvMBlgDLgIMEAAYADwA0AQrIQDgAFgBMACqAGIAN4AegBHADnAHcAP8AvoCFgEWAQYJAAwB3AMsAfuSgHgALAA4ADwAJgAUgAqgBiAEcAhYBFgCLwEiALYAXmBBgoAJAEcAJwAdwB_wFSAKyAfuBCsCF5SA-AAsACoAHAAQAAyABoADwAJgAUgAqgBiAD8AMoAaIA5wB-gEWAI6ASUAuoB7QELAIvASIAnYBQ4C2AF5gMsAZcBBgsAYAAeABkAFQAQgAkABsAEcAKQAdwBRQCmgF2AMIAZwA04B1QD2gIFAQsAtgBj4DYwICgQwA.YAAAAAAAAAAA
-.hbomax.com	TRUE	/	FALSE	1817150657	ab.storage.deviceId.c6116534-defa-4b47-aef9-6698e8a3e06c	g%3A5143dab1-3f99-f92f-8239-d6e86968f7ba%7Ce%3Aundefined%7Cc%3A1771859879324%7Cl%3A1782590657631
-.hbomax.com	TRUE	/	FALSE	0	installation-id	thav62.b9a2d92e-2335-4280-8eb5-732ed975cc54.641a
-.hbomax.com	TRUE	/	FALSE	1817150660	_ga	GA1.1.1684520621.1756937648
-.hbomax.com	TRUE	/	FALSE	1790355548	_gcl_au	1.1.443281791.1782579548
-.hbomax.com	TRUE	/	FALSE	1817150657	ab.storage.sessionId.c6116534-defa-4b47-aef9-6698e8a3e06c	g%3Ae8242652-6efe-c86e-b04b-a1312ee9e5e4%7Ce%3A1782592457639%7Cc%3A1782590657630%7Cl%3A1782590657639
-.hbomax.com	TRUE	/	FALSE	1817150657	ab.storage.userId.c6116534-defa-4b47-aef9-6698e8a3e06c	g%3APROFILEID0344b16b-7d52-45a1-aab2-fa77f7be3a6c%7Ce%3Aundefined%7Cc%3A1771859879311%7Cl%3A1782590657632
-.hbomax.com	TRUE	/	TRUE	1785182658	clickref	undefined
-.hbomax.com	TRUE	/	TRUE	1817150657	gi_ls	1
-.api.hbomax.com	TRUE	/	TRUE	1817150654	st	eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA
-.hbomax.com	TRUE	/	TRUE	1785182658	usr_city	undefined
-.hbomax.com	TRUE	/	TRUE	1785182658	usr_country	undefined
-.hbomax.com	TRUE	/	TRUE	1785182658	usr_state	undefined
-.hbomax.com	TRUE	/	FALSE	1817150681	_ga_QCLBQC10R6	GS2.1.s1782590660$o11$g1$t1782590681$j39$l0$h1912553106
-.hbomax.com	TRUE	/	FALSE	1814131351	GI_WEB_SDK_SONIC_DEVICE_ID	50c00af0-a615-44d2-8125-0ac151756244
-.hbomax.com	TRUE	/	FALSE	0	kidIsLockedInProfile	false
-play.hbomax.com	FALSE	/	FALSE	1817155699	muxData	mux_viewer_id=b3278676-80dc-45c3-917b-2f4457f8dfe2&msn=0.6183492085393112&sid=bd89194c-b749-4469-bfbf-d1d516f40d7b&sst=1782590661747&sex=1782597199588
-.hbomax.com	TRUE	/	FALSE	1814131700	session	{"uuid":"2ae8994f-c227-46c1-a34a-054a54acfa7c","created":1782590653582,"expires":1782597500035}
-.hbomax.com	TRUE	/	TRUE	1817150654	st	eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA
-.max.com	TRUE	/	TRUE	1817150654	st	eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA
-.hbo.com	TRUE	/	TRUE	1817150654	st	eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA
+[
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1791497637,
+    "name": "transientID",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "628836b9-c9e7-4eff-95ee-9b5ccb39e38e"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1788473657,
+    "name": "anonymousConsentElections",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "MjAyNS0wOS0wM1QyMjoxNDoxN1p8RVN8cHRmd2J8Q1FYTlJWQVFYTlJWQUFjQUJCRU5CNkZnQUFBQUFBQUFBQnBZQUFBQUFBSEJBQVlBRGdCT0FRckNRSWdBRmdBVkFBNEFCNEFFQUFNZ0FhQUE4QUNZQUZJQUtvQWJ3QV9BQ0VBRWNBSm9BWVlBeWdCemdEdUFINkFQOEFrb0JmUUQyZ0pFQVRzQW9jQmJBQzh3R1hBTmpBZ3dCQzhSQUJBTFNLZ0JnQk1BRWNBZTBaQURBQ1lBSTRBOW80QUxBQTRBRHdBMEFDT0FJUUJDc2RBakFBV0FCVUFEZ0FJQUFaQUEwQUI0QUV3QUtRQVZRQTNnQi1BRTBBSndBWVlBeWdCb2dEbkFIY0FQMEFmNEJGZ0NPZ0VsQVBhQWl3QkY0Q1JBRTdBS0hBV3dBdk1CbGdETGdJTUVBQVlBRHdBMEFRcklRRFFBRmdCTUFDcUFHOEFSd0E1d0IzQURfQUw2QWUwQkN3Q0xBSU1FZ0FRQTdnR1dFb0I0QUN3QU9BQThBQ1lBRklBS29BamdEMmdJV0FSWUFpOEJJZ0MyQUY1Z1FZS0FDQUJIQUNjQUhjQWY4QlVnQ3NnSVZnUXZLUUhnQUZnQVZBQTRBQ0FBR1FBTkFBZUFCTUFDa0FGVUFQd0F5Z0JvZ0RuQUg2QVJZQWpvQkpRQzZnSHRBUXNBaThCSWdDZGdGRGdMWUFYbUF5d0Jsd0VHQ3dCZ0FCNEFHUUFWQUJDQUNRQUd3QVJ3QXBBQjNBRkZBS2FBWFlBd2dCbkFEVGdIVkFQYUFnVUJDd0MyQUdQZ05qQWdLQkRBLllBQUFBQUFBQUFBQQ=="
+  },
+  {
+    "domain": ".play.hbomax.com",
+    "expirationDate": 1803413165,
+    "name": "_ga_QCLBQC10R6",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "deleted"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1802891471,
+    "name": "usprivacy",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1---"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1806425236,
+    "name": "afUserId",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "6f1f86cd-ddfc-44f9-a8f8-c51ea8968652-p"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1805126835,
+    "name": "OptanonAlertBoxClosed",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "2026-03-15T16:07:15.790Z"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1805126835,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "groups%3Dftc%3A1%2Cpfc%3A1%2Ctc%3A1"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1805126835,
+    "name": "eupubconsent-v2",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "CQQ-d5AQQ-d5AAcABBENBnFgAPLAAAAAABpYJQMB3CJ8BSFDYSZ1IIskaIUXwRABxkQhAgLBAwABiBKAOIQAkCAAAABANCACAAIAMHBAAAFADIAAAAAAIAgAIAAMIAAQAABIIABAAAAAAAAQCAgAAABAAQAQgmAEAAcAgAAlgAIoAFAAAABCAACBAAAAEAAFAAEAAAAAAAAAAAAIICwABQAAjAAAAAAAABgQAAAAAAAEAAABoQAIAA4ATgD9wIVhIEQACwAKgAcAA8ACAAGQANAAeABMACkAFUAN4AegA_ACEAEcAJoAYYAygBzgDuAH6AP8AkoBfQEiAJ2AUOAtgBeYDLgGxgQYAheKgBABMAEcMgBABMAEcOADQAOAA8ANAAjgCEAP3AhWOgSAALAAqABwAEAAMgAaAA8ACYAFIAKoAYgA3gB6AD8AJoATgAwwBlADRAHOAO4AfoA_wCLAEdAJKAiwBF4CRAE7AKHAWwAvMBlgDLgIMEAAYADwA0AQrIQDgAFgBMACqAGIAN4AegBHADnAHcAP8AvoCFgEWAQYJAAwB3AMsAfuSgHgALAA4ADwAJgAUgAqgBiAEcAhYBFgCLwEiALYAXmBBgoAJAEcAJwAdwB_wFSAKyAfuBCsCF5SA-AAsACoAHAAQAAyABoADwAJgAUgAqgBiAD8AMoAaIA5wB-gEWAI6ASUAuoB7QELAIvASIAnYBQ4C2AF5gMsAZcBBgsAYAAeABkAFQAQgAkABsAEcAKQAdwBRQCmgF2AMIAZwA04B1QD2gIFAQsAtgBj4DYwICgQwA.YAAAAAAAAAAA"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150657,
+    "name": "ab.storage.deviceId.c6116534-defa-4b47-aef9-6698e8a3e06c",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "g%3A5143dab1-3f99-f92f-8239-d6e86968f7ba%7Ce%3Aundefined%7Cc%3A1771859879324%7Cl%3A1782590657631"
+  },
+  {
+    "domain": ".hbomax.com",
+    "name": "installation-id",
+    "path": "/",
+    "secure": false,
+    "session": true,
+    "value": "thav62.b9a2d92e-2335-4280-8eb5-732ed975cc54.641a"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150660,
+    "name": "_ga",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GA1.1.1684520621.1756937648"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1790355548,
+    "name": "_gcl_au",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "1.1.443281791.1782579548"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150657,
+    "name": "ab.storage.sessionId.c6116534-defa-4b47-aef9-6698e8a3e06c",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "g%3Ae8242652-6efe-c86e-b04b-a1312ee9e5e4%7Ce%3A1782592457639%7Cc%3A1782590657630%7Cl%3A1782590657639"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150657,
+    "name": "ab.storage.userId.c6116534-defa-4b47-aef9-6698e8a3e06c",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "g%3APROFILEID0344b16b-7d52-45a1-aab2-fa77f7be3a6c%7Ce%3Aundefined%7Cc%3A1771859879311%7Cl%3A1782590657632"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1785182658,
+    "name": "clickref",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "undefined"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150657,
+    "name": "gi_ls",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "1"
+  },
+  {
+    "domain": ".api.hbomax.com",
+    "expirationDate": 1817150654,
+    "name": "st",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1785182658,
+    "name": "usr_city",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "undefined"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1785182658,
+    "name": "usr_country",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "undefined"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1785182658,
+    "name": "usr_state",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "undefined"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150681,
+    "name": "_ga_QCLBQC10R6",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "GS2.1.s1782590660$o11$g1$t1782590681$j39$l0$h1912553106"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1814131351,
+    "name": "GI_WEB_SDK_SONIC_DEVICE_ID",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "50c00af0-a615-44d2-8125-0ac151756244"
+  },
+  {
+    "domain": ".hbomax.com",
+    "name": "kidIsLockedInProfile",
+    "path": "/",
+    "secure": false,
+    "session": true,
+    "value": "false"
+  },
+  {
+    "domain": "play.hbomax.com",
+    "expirationDate": 1817155699,
+    "name": "muxData",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "mux_viewer_id=b3278676-80dc-45c3-917b-2f4457f8dfe2&msn=0.6183492085393112&sid=bd89194c-b749-4469-bfbf-d1d516f40d7b&sst=1782590661747&sex=1782597199588"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1814131700,
+    "name": "session",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "{\"uuid\":\"2ae8994f-c227-46c1-a34a-054a54acfa7c\",\"created\":1782590653582,\"expires\":1782597500035}"
+  },
+  {
+    "domain": ".hbomax.com",
+    "expirationDate": 1817150654,
+    "name": "st",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA"
+  },
+  {
+    "domain": ".max.com",
+    "expirationDate": 1817150654,
+    "name": "st",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA"
+  },
+  {
+    "domain": ".hbo.com",
+    "expirationDate": 1817150654,
+    "name": "st",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJ0b2tlbi1jZDA1YzE5OC1mYWFkLTQ4ZWEtOWYyZS1hNjFjMWE1NjFmYjEiLCJpc3MiOiJmcGEtaXNzdWVyIiwic3ViIjoiVVNFUklEOmJvbHQ6ZDY5NWQ0NTAtMmVjNi00OTQ3LThkMDgtYzRjZDUwZjkxYzIxIiwiaWF0IjoxNzU2OTM3ODUwLCJleHAiOjIwNzIyOTc4NTAsInR5cGUiOiJBQ0NFU1NfVE9LRU4iLCJzdWJkaXZpc2lvbiI6ImJlYW1fZW1lYSIsInNjb3BlIjoiZGVmYXVsdCIsInZlcnNpb24iOiJ2NCIsImFub255bW91cyI6ZmFsc2UsImRldmljZUlkIjoiNTBjMDBhZjAtYTYxNS00NGQyLTgxMjUtMGFjMTUxNzU2MjQ0In0.D04NL9DLyWIViLZtLOngLDsIv_jGKbeaZTmIphKC1Y-8KiliKYGgsxBVgIQ9RU44y8cM_4f4Ya7em2jtXFCPnY-X7YpF9BZtSJHSrcoR0XOWSHwpK6RjJ5X1w4WJo0iSKV_OFO37CBHkuuhAxtYrGv-H2Twx2ij8yQC8AEF67sAf31TKLvpr2qthIgU_ZQb4yUEjc7bpmzvm1Fr7nqpF7ebgFJi5p7RN4Xu-uaimxWdAqtSPC3kr6YK2I8cLMYzP6WNUdJoUM9iH8ZDxHiMUkj2bXkZFtK5Z9R2E1-JM_9zHvIHhWNHWw7I7KYSyD93iwO5cm0cAWh2le5pUmTiPiA"
+  }
+]
