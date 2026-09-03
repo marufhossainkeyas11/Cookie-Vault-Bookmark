@@ -1,0 +1,83 @@
+[
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1813497501,
+    "name": "nfvdid",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "BQFmAAEBEKRVpgJULTuIN5z6fngKFkZgaqFnOYpCOS-GsPv1izYqCn6ozBjYfVQWUk0ZbmbAnORLmKvXXkbUROJ6LgU2q6zUh5VLR__A-fVvZxReFwuMaTnduf2j_SKK4R7p8Fk1WvKW0JxTT1TvUSZ7Cf5Petov"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1790956964,
+    "name": "gsid",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "2f6d78cb-5ead-46fd-b25e-171579629624"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1814256297,
+    "name": "NetflixId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "ct%3DBgjHlOvcAxLmA0JB9vQcd2HkpxiNin4cHo0FDcyZTOEUPcuBw1a7SJ5a4hCE0SdQXDiN6GehQ1z4phOkOu45_uKiME2SL62kkvmfq4RUMucLqVHyj0e3TtVHT7MN2xmoYy_XIU2jrThu46aIMkIxquRI-OTLgE8yTIhgYKMS2yIGXGZmapiOnbjfv6KnlJ9sX468DD_PZsiPxlhky9aW6g12j8oHLSENOnabbNdvKY_8KNPEkRl-6allJR_Y_zgD4csVqKoAkfi-ZvDkKM0PWDXguD4X4tmSixUk1Sbn8Z6vVsUUnbRovcM1k85GD21pYYsFX1GM1zfKj-Eghy4M9CeybSZ-D88AHj_OBl0BSWhjHTyx5hUE_EgXSAf7VkgC0Gr3SJA7Pws1vXH7wzaty45P2bQPj-_8F3YZEn7rHcrkuecBNSs8-Yoc_t690_b8_thqLAyad2p-3yWNPQChYe-Tq4OwV8NIwaGtdYaU5lvsqsHZtGL0hUw22hrLi3cOwdLX1CIeMtJglRv2x0U0qdmi0QJJA6ZaIogzM2rHpRFyA3tMBTTd0ZaBQLBwgjCVUcN7uZOZcwRYD46pVA9eF64Cg5-QlJbkbS05a1sCqF5yow4r9DuZHy7ycGsPjLE7Ves-n1gbfH1H0qEuYPYAIRgGIg4KDPPo8EFolSuNmiJZKQ..%26ch%3DAQEAEAABABTswd7orLBtNPBPErntMME2bPv6cjNHoRw.%26v%3D3%26pg%3D24MZWSRXTFHCTKO2H5PKX3HVPQ"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1814256290,
+    "name": "OptanonConsent",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "isGpcEnabled=0&datestamp=Mon+Jun+29+2026+13%3A34%3A50+GMT%2B0530+(India+Standard+Time)&version=202604.2.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=6aa22d4d-a48a-4b96-bc79-76840d1161f5&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&crTime=1781961464395&AwaitingReconsent=false"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1814256297,
+    "name": "SecureNetflixId",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "v%3D3%26mac%3DAQEAEQABABR6_5UYBsuSQx4IyWTMRPWzxtEs3tIPeG4.%26dt%3D1782720297393"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1790496290,
+    "name": "netflix-sans-bold-3-loaded",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "true"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1790496290,
+    "name": "netflix-sans-normal-3-loaded",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "true"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1790496290,
+    "name": "pas",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D"
+  },
+  {
+    "domain": ".netflix.com",
+    "expirationDate": 1790956964,
+    "name": "profilesNewSession",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "0"
+  }
+]
