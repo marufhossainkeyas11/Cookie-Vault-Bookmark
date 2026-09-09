@@ -1,0 +1,110 @@
+[
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1803445696,
+    "name": "i18n-prefs",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "USD"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1803445696,
+    "name": "lc-main-av",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "en_US"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1803445696,
+    "name": "session-id-time",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "2082787201l"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1803445696,
+    "name": "ubid-main-av",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "261-9143685-3542868"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1804002254,
+    "name": "at-main-av",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "Atza|gQDRuo4fAwEBAvUsAZ_roOnAuHlIbyCTg0tVWexzrqRoIQek2ySWCZbb6PdHsSQ5OEWd3tK3H4FwXqVb5TeSc7SB2GXh2TYO82JAeZ0cyh9WdvVmc6SDbXejwRwcizTe9OWFB4yzakYsA0yUBXt99YbFvO0f9S_83tbPv0kt3iX0BHmOG4ds1JBsSs7e__i7fhEet_xYidEbue5MaixQhiwS5GtfxWduo8UYKfKKZ-aUvGq7w6FLoEYs9gY7i6Nw5PkmHzU0ZZZbMYAFG2zUpKNcNre63FMRBkKfn5xH1_lX6UEDBzZ4aki65b44y-2cgSJ-BVa0pAvkn8AGTaF3WYToLUUnidnUGMxivMaEem6XzE9fzWw-_4PyNVUT4i8xHo5BrfhtSlJxQAPaqvh6SURL51ALVuVfo2-laCyWpgBl8FFi6FOT-ZcNrJQ6vUYw_vRVySeblooFwNSAtgVThC5vx0g23zTbhEc"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1804002254,
+    "name": "sess-at-main-av",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "qS00KPVArhontCorp/ALhd/LmEv2vKeVlQ="
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1784707135,
+    "name": "av-profile",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "cGlkPWFtem4xLmFjdG9yLnBlcnNvbi5vaWQuQTFGREg1STBHRjFEMFkmdGltZXN0YW1wPTE3ODIxMTUxMzY4ODImdmVyc2lvbj12MQ.g7xMpUsM0U-BlRghPwirwIRxEuhrt98LHzlZaR3Y9dIUAAAAAQAAAABqOOtAcmF3AAAAAPgWC9WfHH8iB-olH_E9xQ"
+  },
+  {
+    "domain": "www.primevideo.com",
+    "expirationDate": 1812394894,
+    "name": "csm-hit",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "tb:5XJDBBS812D2CM9P6WC6+s-5XJDBBS812D2CM9P6WC6|1782154894120&t:1782154894120&adb:adblk_no"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1813690879,
+    "name": "session-token",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "\"GFolwZLc4rQbSnMRrFOMMtGRKd5lgrFvHMgzwGhulrGGiTTpJSWfGj3gDgOVWLuu/mccMk4HmeJyy7bjjoxU26WsJ6b6jI9JmtyG2QJgBf12AqoLyDYbtU2Ki/GaDVGpaoc4BBO7DWNUGgaN/+GSBXs/gashYszDiP0TE/CuSr2tk2T6veQrbfJ/Rxd6dsIuQCU3ZpSigUBHfDtUbnNWDbxyjRJf2V69vegR9LhETtf3Xz1AojArhontCorpWaIBKaXuqAx0AFxluPQ6J3Nv9Z3sSjFR9nf4NTSK+/pIsCBsw==\""
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1813690879,
+    "name": "x-main-av",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "\"WFNlryB9yMSbQsaWJreag0Nro?CPtrsrlaAuzwZhJe1K6HECOCjiWEbix7SW3OoZ\""
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1813690919,
+    "name": "av-timezone",
+    "path": "/",
+    "secure": false,
+    "session": false,
+    "value": "Asia/Calcutta"
+  },
+  {
+    "domain": ".primevideo.com",
+    "expirationDate": 1816714919,
+    "name": "session-id",
+    "path": "/",
+    "secure": true,
+    "session": false,
+    "value": "261-8160044-6586532"
+  }
+]
